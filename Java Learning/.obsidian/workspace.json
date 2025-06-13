@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "7c047e33afee3f75",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1bcb742ee1b725f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c67877c136a30c87",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9689445828b61065",
+    "type": "split",
+    "children": [
+      {
+        "id": "ea3ba5941ddc4875",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ddfd2f58698a7d8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3b4fcad3462a74cb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c459033065c2a0e7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dbe994ff3834477d",
+    "type": "split",
+    "children": [
+      {
+        "id": "572815ef260d088c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d43aba09ebfcd8b7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "sorting algorithms/3. insertion sort.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 3. insertion sort"
+            }
+          },
+          {
+            "id": "228b5ee821ecacad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Syllabus For DSA.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Syllabus For DSA"
+            }
+          },
+          {
+            "id": "1ed7c3169fcf76a9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5ac50586761d4d33",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "sorting algorithms/3. insertion sort.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 3. insertion sort"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c67877c136a30c87",
+  "lastOpenFiles": [
+    "4. Merge sort.md",
+    "0. Syllabus For DSA.md",
+    "sorting in java.md",
+    "sorting algorithms/1. Bubble sort.md",
+    "sorting algorithms/2. Selection sort.md",
+    "6. Backtracking.md",
+    "1. Basic Java.md",
+    "2. oops in java.md",
+    "operators in java.md",
+    "Java recursion problems solved can be asked in interview.md",
+    "Java Recursion.md",
+    "Access Modifiers in Java.md",
+    "5. Recursion.md",
+    "4. Patterns.md",
+    "3. Time and Space Complexity.md",
+    "2. Insertion sort.md",
+    "sorting algorithms/3. insertion sort.md",
+    "images/Pasted image 20241031162049.png",
+    "images/Pasted image 20241031161316.png",
+    "images/Pasted image 20241031152748.png",
+    "images",
+    "images/Pasted image 20241031144534.png",
+    "images/Pasted image 20241030185440.png",
+    "sorting algorithms",
+    "backtracking.md"
+  ]
+}

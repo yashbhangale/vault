@@ -1,0 +1,255 @@
+{
+  "main": {
+    "id": "443e222eef503fac",
+    "type": "split",
+    "children": [
+      {
+        "id": "d018510cc6ae3742",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2eedef6b86a717a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Obsidian upto date.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian upto date"
+            }
+          },
+          {
+            "id": "c3dac00006a56f84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "92961bf4776dc598",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "999330f5cf3ec718",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f86eb6c2b406b87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16caefe5e3afb1f5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "30396e951607d859",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "07ffde9e458a2fa1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 317.5004348754883
+  },
+  "right": {
+    "id": "48303e4fbc4f6709",
+    "type": "split",
+    "children": [
+      {
+        "id": "10a0fd446bafc5f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63693525d78ce3f1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Sem 8/final Exam/AAI ( advanced AI ).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for AAI ( advanced AI )"
+            }
+          },
+          {
+            "id": "bfa695205d32f159",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sem 8/final Exam/AAI ( advanced AI ).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from AAI ( advanced AI )"
+            }
+          },
+          {
+            "id": "80c4ccfed6676116",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3a733b6e78700aa9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2.DSA/Neetcode blind 75.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Neetcode blind 75"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 420.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "hugo-publish:hugo sync": false,
+      "iconic:Open rulebook": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "92961bf4776dc598",
+  "lastOpenFiles": [
+    "todo.md",
+    "index.md",
+    "Projects/index.md",
+    "Projects/Obsidian upto date.md",
+    "Rough.md",
+    "Projects",
+    "1.DevOps - Cloud/Interview prep/Linux.md",
+    "1.DevOps - Cloud/Interview prep/Computer Networking.md",
+    "Nanite/Drawing 2025-06-05 21.04.51.excalidraw.md",
+    "1.DevOps - Cloud/Interview prep",
+    "1.DevOps - Cloud/Untitled.md",
+    "Nanite/nanite config todo.md",
+    "fusion/Work done till now.md",
+    "Nanite/Nanite.md",
+    "Nanite/website todo.md",
+    "Nanite/Nanite Branding guide implemented while building/branding guide.md",
+    "Nanite/Nanite Branding guide implemented while building",
+    "fusion/launch vm with qemu.md",
+    "fusion/nanite where are which.md",
+    "2.DSA/0. DSA Index.md",
+    "For Job/resume edists for devops.md",
+    "Nanite/naniote docs/build_and_test_guide.md",
+    "1.DevOps - Cloud/AWS/aws.md",
+    "NodeJs/NodeJS.md",
+    "website in which Jobs to apply/Untitled/list of Job websites.md",
+    "NodeJs",
+    "website in which Jobs to apply/Untitled",
+    "website in which Jobs to apply",
+    "Nanite/naniote docs/architecture_design.md",
+    "Nanite/naniote docs/nanite_user_guide.md",
+    "Nanite/naniote docs/ai_integration_guide.md",
+    "2.DSA/Neetcode blind 75.md",
+    "2.DSA/Pasted image 20250531233744.png",
+    "For Job/Pasted image 20250531210528.png",
+    "2.DSA/Pasted image 20250530181930.png",
+    "Memes/Pasted image 20250403113930.png",
+    "2.DSA/Pasted image 20250529123125.png",
+    "2.DSA/Pasted image 20250529121142.png",
+    "Nanite/nanote customization docs/default.png",
+    "Nanite/nanote customization docs/login-background.png",
+    "Nanite/nanote customization docs/logo.png",
+    "Nanite/nanote customization docs/background.png",
+    "Nanite/nanote customization docs",
+    "Nanite/customization docs",
+    "Nanite/naniote docs",
+    "Nanite/nanit docs",
+    "fusion/Untitled.canvas",
+    "2.DSA/Linked list code.canvas"
+  ]
+}

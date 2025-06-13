@@ -1,0 +1,10 @@
+{
+  "hugo-publish:sync-blog": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "H"
+    }
+  ]
+}

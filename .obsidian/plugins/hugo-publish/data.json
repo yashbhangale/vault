@@ -1,0 +1,9 @@
+{
+  "blog_tag": "",
+  "exclude_dir": "",
+  "blog_dir": "/content/posts",
+  "static_dir": "static/images",
+  "site_dir": "/home/yash/newsite",
+  "keep_list": "",
+  "export_blog_tag": true
+}

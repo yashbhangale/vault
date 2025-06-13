@@ -1,0 +1,414 @@
+---
+title: Patterns in java (placements)
+date: 2024-10-02
+categories:
+  - placement
+  - java
+---
+# 1. code to print simple rectangle 
+
+``` java
+public class patterns {
+  public static void main(String[] args) {
+    
+        int n = 4; // for rows 
+        int m = 5; //for columns 
+
+        for (int i = 1 ; i <= n ; i++){ // outerloop to print rows 
+            for( int j = 1; j <= m; j++){  // inner loop to print columns
+                System.out.print("*");  // print *s
+            }
+            System.out.println(); // move to next line after n = 4 row 
+        }
+  }
+}
+``` 
+
+# 2. hollow rectangle
+
+``` java
+public class hollowpatterns {
+  public static void main(String[] args) {
+    
+        int n = 4; // n = 4 rows
+        int m = 5; // m = 5 columns
+
+        for(int i = 1 ; i <=n ; i++){ // loop for rows
+          for (int j = 1 ; j <=m ; j++){ // loop for cloumns
+            if (i == 1 || j == 1|| i == n||j ==m){ // fi condition for 1st row and 1st column
+              System.out.print("*");
+            }else{
+              System.out.print(" ");
+            }
+          }
+           System.out.println();
+        }
+       
+      }
+  }
+  ```
+
+# 3.  half pyramid
+
+``` java
+public class pyramid {
+  public static void main(String[] args) {
+    
+        int n = 5; // n = 5 rows
+        
+        for ( int i = 1; i <= n; i++){
+          for ( int j = 1 ; j <= i ; j++){
+            System.out.print("* ");
+          }
+          System.out.println();
+        }
+      }
+  }
+```
+
+# 4. invert half pyramid
+
+method 1
+
+```java
+public class inverthalfpyramid {
+  public static void main(String[] args) {
+    
+        int n = 5; // n = 5 rows
+        
+        for ( int i = n; i <= n; i--){
+          for ( int j = 1 ; j <= i ; j++){
+            System.out.print("* ");
+          }
+          System.out.println();
+        }
+      }
+  }
+```
+
+method 2
+
+``` java
+public class inverthalfpyramid {
+  public static void main(String[] args) {
+    
+        int n = 5; // n = 5 rows
+        
+        for ( int i = 1 ; i <= n; i++){
+          for ( int j = 1 ; j <= n-1 ; j++){
+            System.out.print("* ");
+          }
+          System.out.println();
+        }
+      }
+  }
+```
+
+# 5. number pattern problem 
+
+```
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+```
+
+``` java
+public class numberpattern {
+  public static void main(String[] args) {
+    int n = 5;
+    for(int i = 1 ; i <= n; i++ ){
+      for(int j = 1 ; j <= i  ; j++){
+        System.out.print(j+ " ");
+      }
+      System.out.println();
+    }
+  }
+}
+```
+
+# 6. invert pattern
+
+```
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1
+```
+
+```java
+public class invertednumberpattern {
+  public static void main(String[] args) {
+        int n = 5; 
+        for (int i = 1 ; i <= n ; i++){
+            for (int j =1; j <= n-i+1 ;j++){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+  }
+}
+  
+```
+
+# 7. Flloids triangle
+```
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15
+```
+
+```java
+public class flloidstriangle {
+  public static void main(String[] args) {
+        int n = 5;
+        int number = 1; 
+        for (int i = 1 ; i <= n ; i++){
+            for (int j =1; j <= i ;j++){
+                System.out.print(number+" ");
+                number++;
+            }
+            System.out.println();
+        }
+  }
+}
+```
+
+# 8. binary triangle
+ 
+```
+ 1
+ 0 1
+ 1 0 1
+ 0 1 0 1
+ 1 0 1 0 1
+```
+
+```java
+public class binarytriangle {
+  public static void main(String[] args) {
+        int n = 5;
+        for (int i = 1 ; i <= n ; i++){
+            for (int j =1; j <= i ;j++){
+              int sum = i+j;
+              if(sum%2 == 0){
+                System.out.print(" "+ "1");
+              }else{
+                System.out.print(" " + "0");
+              }
+            }
+            System.out.println();
+        }
+  }
+}
+```
+
+# 9. butterfly pattern
+
+```
+*    *
+**  **
+******
+******
+**  **
+*    *
+```
+
+```java
+public class butterfly {
+  public static void main(String[] args) {
+        int n = 3;
+        for (int i = 1;i<=n;i++){
+            for( int j = 1 ; j <=i;j++){
+                System.out.print("*");
+            }
+            int spaces = 2 *(n-i);
+            for(int j=1; j <=spaces;j++){
+                System.out.print(" ");
+            }
+
+            for(int j = 1 ;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = n;i>=1;i--){
+            for( int j = 1 ; j <=i;j++){
+                System.out.print("*");
+            }
+            int spaces = 2 *(n-i);
+            for(int j=1; j <=spaces;j++){
+                System.out.print(" ");
+            }
+
+            for(int j = 1 ;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+  }
+}
+```
+
+# 10. Solid rhombus 
+
+```
+     * * * * *
+    * * * * *
+   * * * * *
+  * * * * *
+ * * * * *
+```
+
+```java
+public class rhombus {
+  public static void main(String[] args) {
+        int n = 5;
+        for ( int i = 1 ; i <= n ; i++){
+          for ( int j = 1; j <=n -i; j++ ){
+            System.out.print(" ");
+          }
+          for( int j = 1;j<=5 ; j++){
+            System.out.print(" *");
+          }
+          System.out.println();
+        }
+  }
+}
+```
+
+# 11. star pyramid
+
+```
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+```
+
+```java
+public class pyramid {
+  public static void main(String[] args) {
+        int n = 5;
+        for ( int i = 1 ; i <= n ; i++){
+          for ( int j = 1; j <=n -i; j++ ){
+            System.out.print(" ");
+          }
+          for( int j = 1;j<=i ; j++){
+            System.out.print(" *");
+          }
+          System.out.println();
+        }
+  }
+}
+
+```
+
+# 12. palindromic pattern
+```
+	1
+   212
+  32123
+ 4321234
+543212345
+```
+
+```java
+public class palindromicpattern {
+  public static void main(String[] args) {
+        int n = 5;
+        for (int i=1; i<=n;i++){
+            for (int j =1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for ( int j=i;j>=1;j--){
+                System.out.print(j);
+            }
+            for(int j=2;j<=i;j++ ){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+  }
+}
+```
+
+# 13. Diamond pattern
+
+```
+  *
+ ***
+*****
+*****
+ ***
+  *
+```
+
+```java
+public class diamond{
+  public static void main(String[] args) {
+
+        int n = 3;
+        for(int i = 1; i <=n;i++){
+            for (int j = 1 ; j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for (int j = 1; j<=2*i-1;j++){
+                System.out.print("*");
+            }           
+            System.out.println();
+        }
+        for(int i = n; i >=1;i--){
+            for (int j = 1 ; j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for (int j = 1; j<=2*i-1;j++){
+                System.out.print("*");
+            }           
+            System.out.println();
+        }
+  }
+}
+```
+
+
+# 14. code to print pascal triangle
+
+```
+     1 
+    1 1 
+   1 2 1 
+  1 3 3 1 
+ 1 4 6 4 1
+```
+
+```java
+public class PascalTriangleSimple {
+    public static void main(String[] args) {
+        int numRows = 5; // Number of rows to print
+
+        for (int i = 0; i < numRows; i++) {
+            int number = 1; // First number in each row is always 1
+
+            // Print spaces to center the triangle
+            for (int j = 0; j < numRows - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Print each number in the row
+            for (int j = 0; j <= i; j++) {
+                System.out.print(number + " ");
+                number = number * (i - j) / (j + 1); // Update the number using Pascal's rule
+            }
+
+            System.out.println(); // Move to the next line after each row
+        }
+    }
+}
+
+```

@@ -1,0 +1,29 @@
+cscusatCU---
+title: Kubernates notes 2  Kubernetes Cluster types
+date: 2025-01-12
+---
+
+- [x] kubeadm
+- [x] minikube (local/ec2)
+- [x] KIND cluster
+- [ ] EKS/AKS/GKS
+
+ 
+
+#### Name Space
+
+![alt text](Pastedimage20250110193315.png)
+
+![alt text](Pastedimage20250110193545.png)
+
+![alt text](Pastedimage20250110195119.png)
+
+Deployment >> repliaset
+
+# Daemon set
+
+# CRON JOB
+
+cron guru google   
+
+![alt text](Pastedimage20250111125522.png)
