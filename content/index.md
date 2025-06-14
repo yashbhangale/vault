@@ -2,9 +2,15 @@
 title: Yash Bhangale's Notes
 ---
 
-Github : github.com/yashbhangale
-Portfolio : hiremefor.cloud
-linkedin : linkedin.com/in/yashbhangale
+- Github : https://github.com/yashbhangale
+- My Portfolio : https://hiremefor.cloud
+- linkedin : https://linkedin.com/in/yashbhangale
 
 ## Index
+
+[[1. DevOps Index]]
+
+[[0. DSA Index]]
+
+[[1. Azure Index]]
 
