@@ -1,6 +1,10 @@
 ---
-title: Welcome to Quartz
+title: Yash Bhangale's Notes
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Github : github.com/yashbhangale
+Portfolio : hiremefor.cloud
+linkedin : linkedin.com/in/yashbhangale
+
+## Index
+
