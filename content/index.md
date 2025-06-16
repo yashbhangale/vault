@@ -8,9 +8,12 @@ title: Yash Bhangale's Notes
 
 ## Index
 
+[[todo]]
+
 [[1. DevOps Index]]
 
 [[0. DSA Index]]
 
 [[1. Azure Index]]
+
 
