@@ -4,7 +4,7 @@
 ## Compute
 [[Azure vm]]
 [[AKS]]
-[[Az functions]]
+[[Az functions azure serverless]]
 [[AZ batch]]
 [[AZ app services]]
 
