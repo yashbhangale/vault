@@ -55,7 +55,7 @@ Before beginning the build process, we need to clearly define the requirements f
 - Creative coding with AI support
 - Research and experimentation with various AI models
 
-For more details, refer to the [requirements.md](requirements.md) file.
+For more details, refer to the [requirements.md](Projects/Nanite/naniote%20docs/requirements.md) file.
 
 ## Architecture and Software Stack Design
 
@@ -109,7 +109,7 @@ The architecture of Nanite follows a layered approach, building upon the solid f
    - Large Language Models: Mistral, Llama 3, Phi-3, DeepSeek
    - Specialized Models: Code generation, image generation, speech recognition
 
-For more details, refer to the [architecture_design.md](architecture_design.md) file.
+For more details, refer to the [architecture_design.md](Projects/Nanite/naniote%20docs/architecture_design.md) file.
 
 ## Live-build Configuration
 
@@ -163,7 +163,7 @@ Create custom scripts to set up AI components during the build process:
 2. Python AI Libraries Installation Script
 3. Desktop Configuration Script
 
-For more details, refer to the [live_build_configuration.md](live_build_configuration.md) file.
+For more details, refer to the [live_build_configuration.md](Projects/Nanite/naniote%20docs/live_build_configuration.md) file.
 
 ## AI Models and Applications Integration
 
@@ -219,7 +219,7 @@ Integration of a code assistant for programming tasks:
 1. Code Assistant Script
 2. VSCode Extension Integration
 
-For more details, refer to the [ai_integration_guide.md](ai_integration_guide.md) file.
+For more details, refer to the [ai_integration_guide.md](Projects/Nanite/naniote%20docs/ai_integration_guide.md) file.
 
 ## Building and Testing the ISO
 
@@ -262,7 +262,7 @@ lb config --binary-images iso-hybrid --binary-compression xz
 sudo lb build 2>&1 | tee build_final.log
 ```
 
-For more details, refer to the [build_and_test_guide.md](build_and_test_guide.md) file.
+For more details, refer to the [build_and_test_guide.md](Projects/Nanite/naniote%20docs/build_and_test_guide.md) file.
 
 ## VM Image Creation
 
@@ -290,7 +290,7 @@ This section covers the creation of virtual machine images for VMware and Virtua
 2. AI Component Optimizations
 3. User Experience Enhancements
 
-For more details, refer to the [vm_image_creation_guide.md](vm_image_creation_guide.md) file.
+For more details, refer to the [vm_image_creation_guide.md](Projects/Nanite/naniote%20docs/vm_image_creation_guide.md) file.
 
 ## Final Validation and Documentation
 
@@ -327,7 +327,7 @@ Ensuring consistency across all documentation:
 3. AI Integration → Build Process
 4. Build Process → VM Image Creation
 
-For more details, refer to the [build_process_validation.md](build_process_validation.md) file.
+For more details, refer to the [build_process_validation.md](Projects/Nanite/naniote%20docs/build_process_validation.md) file.
 
 ## Getting Started Guide
 
@@ -358,7 +358,7 @@ This section provides a user guide for getting started with Nanite.
    - Code Assistance
 3. Development Environment
 
-For more details, refer to the [nanite_user_guide.md](nanite_user_guide.md) file.
+For more details, refer to the [nanite_user_guide.md](Projects/Nanite/naniote%20docs/nanite_user_guide.md) file.
 
 ## Conclusion
 

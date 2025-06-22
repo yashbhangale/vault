@@ -16,4 +16,5 @@ title: Yash Bhangale's Notes
 
 [[1. Azure Index]]
 
+[[Microsoft Entra ID]]
 

@@ -32,7 +32,7 @@
 [[Azure sentiel]]
 
 ## Management
-[[Azure active Directory]]
+[[Microsoft Entra ID]]
 [[Azure DevOps]]
 [[Azure monitor]]
 
