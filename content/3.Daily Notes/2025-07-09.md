@@ -1,0 +1,16 @@
+---
+draft:
+---
+## Todos
+
+- [ ] DSA
+- [ ] DEVOPS
+- [ ] GYM
+- [ ] Good Food
+- [ ] Sleep
+- [ ] Side Project
+- [ ] Gaming 
+
+## Goal of the Day
+## Rough Work
+

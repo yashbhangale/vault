@@ -1015,7 +1015,8 @@
   "smart_notices": {
     "muted": {
       "done_import": true,
-      "embedding_complete": true
+      "embedding_complete": true,
+      "done_initial_scan": true
     }
   },
   "version": ""
