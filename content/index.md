@@ -18,3 +18,4 @@ title: Yash Bhangale's Notes
 
 [[Microsoft Entra ID]]
 
+lalalala
