@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0078d4">Azure AI Video Generation Architecture</text>
+  
+  <!-- User Layer -->
+  <g id="user-layer">
+    <rect x="50" y="80" width="150" height="100" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" filter="url(#shadow)"/>
+    <text x="125" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976d2">Users</text>
+    <text x="125" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1976d2">Web/Mobile</text>
+    <text x="125" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1976d2">Upload Documents</text>
+    <text x="125" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1976d2">Query Videos</text>
+  </g>
+  
+  <!-- Frontend Layer -->
+  <g id="frontend-layer">
+    <rect x="250" y="80" width="180" height="120" rx="10" fill="#fff3e0" stroke="#f57c00" stroke-width="2" filter="url(#shadow)"/>
+    <text x="340" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f57c00">Azure Static Web Apps</text>
+    <text x="340" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f57c00">React Frontend</text>
+    <text x="340" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f57c00">• File Upload Interface</text>
+    <text x="340" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f57c00">• Video Questionnaire</text>
+    <text x="340" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f57c00">• Video Player</text>
+  </g>
+  
+  <!-- API Gateway -->
+  <g id="api-gateway">
+    <rect x="480" y="80" width="160" height="120" rx="10" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" filter="url(#shadow)"/>
+    <text x="560" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7b1fa2">Azure API Management</text>
+    <text x="560" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7b1fa2">• Authentication</text>
+    <text x="560" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7b1fa2">• Rate Limiting</text>
+    <text x="560" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7b1fa2">• Request Routing</text>
+    <text x="560" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7b1fa2">• Monitoring</text>
+  </g>
+  
+  <!-- Document Processing -->
+  <g id="document-processing">
+    <rect x="50" y="250" width="200" height="100" rx="10" fill="#e8f5e8" stroke="#388e3c" stroke-width="2" filter="url(#shadow)"/>
+    <text x="150" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#388e3c">Azure Functions</text>
+    <text x="150" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#388e3c">Document Processing</text>
+    <text x="150" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#388e3c">• OCR (Form Recognizer)</text>
+    <text x="150" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#388e3c">• Text Extraction</text>
+  </g>
+  
+  <!-- Storage Layer -->
+  <g id="storage-layer">
+    <rect x="300" y="250" width="160" height="100" rx="10" fill="#fff8e1" stroke="#ffa000" stroke-width="2" filter="url(#shadow)"/>
+    <text x="380" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffa000">Azure Blob Storage</text>
+    <text x="380" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffa000">• Documents</text>
+    <text x="380" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffa000">• Generated Videos</text>
+    <text x="380" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffa000">• Image Assets</text>
+  </g>
+  
+  <!-- Vector Database -->
+  <g id="vector-db">
+    <rect x="500" y="250" width="160" height="100" rx="10" fill="#fce4ec" stroke="#c2185b" stroke-width="2" filter="url(#shadow)"/>
+    <text x="580" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2185b">Azure Cognitive Search</text>
+    <text x="580" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#c2185b">Vector Search</text>
+    <text x="580" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#c2185b">• Document Embeddings</text>
+    <text x="580" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#c2185b">• Semantic Search</text>
+  </g>
+  
+  <!-- RAG Architecture -->
+  <g id="rag-architecture">
+    <rect x="700" y="250" width="180" height="100" rx="10" fill="#e1f5fe" stroke="#0277bd" stroke-width="2" filter="url(#shadow)"/>
+    <text x="790" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0277bd">RAG System</text>
+    <text x="790" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277bd">Azure Container Apps</text>
+    <text x="790" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277bd">• Query Processing</text>
+    <text x="790" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277bd">• Context Retrieval</text>
+  </g>
+  
+  <!-- AI Services Layer -->
+  <g id="ai-services">
+    <rect x="100" y="400" width="800" height="150" rx="10" fill="#f3e5f5" stroke="#673ab7" stroke-width="2" filter="url(#shadow)"/>
+    <text x="500" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#673ab7">Azure AI Services</text>
+    
+    <!-- OpenAI Service -->
+    <rect x="120" y="450" width="140" height="80" rx="5" fill="#ffffff" stroke="#673ab7" stroke-width="1"/>
+    <text x="190" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#673ab7">Azure OpenAI</text>
+    <text x="190" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">GPT-4o</text>
+    <text x="190" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Text Generation</text>
+    <text x="190" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Embeddings</text>
+    
+    <!-- Computer Vision -->
+    <rect x="280" y="450" width="140" height="80" rx="5" fill="#ffffff" stroke="#673ab7" stroke-width="1"/>
+    <text x="350" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#673ab7">Computer Vision</text>
+    <text x="350" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Image Analysis</text>
+    <text x="350" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Scene Detection</text>
+    <text x="350" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Image Generation</text>
+    
+    <!-- Speech Services -->
+    <rect x="440" y="450" width="140" height="80" rx="5" fill="#ffffff" stroke="#673ab7" stroke-width="1"/>
+    <text x="510" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#673ab7">Speech Services</text>
+    <text x="510" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Text-to-Speech</text>
+    <text x="510" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Voice Synthesis</text>
+    <text x="510" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Audio Generation</text>
+    
+    <!-- Video Indexer -->
+    <rect x="600" y="450" width="140" height="80" rx="5" fill="#ffffff" stroke="#673ab7" stroke-width="1"/>
+    <text x="670" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#673ab7">Video Indexer</text>
+    <text x="670" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Video Processing</text>
+    <text x="670" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Scene Analysis</text>
+    <text x="670" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Metadata Extraction</text>
+    
+    <!-- Media Services -->
+    <rect x="760" y="450" width="120" height="80" rx="5" fill="#ffffff" stroke="#673ab7" stroke-width="1"/>
+    <text x="820" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#673ab7">Media Services</text>
+    <text x="820" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Video Encoding</text>
+    <text x="820" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">Streaming</text>
+    <text x="820" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#673ab7">CDN</text>
+  </g>
+  
+  <!-- AI Agent Orchestration -->
+  <g id="agent-orchestration">
+    <rect x="950" y="250" width="200" height="300" rx="10" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" filter="url(#shadow)"/>
+    <text x="1050" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#3f51b5">Azure Container Apps</text>
+    <text x="1050" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#3f51b5">AI Agent Workflow</text>
+    
+    <!-- Manager Agent -->
+    <rect x="970" y="320" width="160" height="40" rx="5" fill="#ffffff" stroke="#3f51b5" stroke-width="1"/>
+    <text x="1050" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#3f51b5">Manager Agent</text>
+    <text x="1050" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#3f51b5">Orchestrates workflow</text>
+    
+    <!-- Generator Agent -->
+    <rect x="970" y="370" width="160" height="40" rx="5" fill="#ffffff" stroke="#3f51b5" stroke-width="1"/>
+    <text x="1050" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#3f51b5">Generator Agent</text>
+    <text x="1050" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#3f51b5">Creates scene content</text>
+    
+    <!-- Narrator Agent -->
+    <rect x="970" y="420" width="160" height="40" rx="5" fill="#ffffff" stroke="#3f51b5" stroke-width="1"/>
+    <text x="1050" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#3f51b5">Narrator Agent</text>
+    <text x="1050" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#3f51b5">Generates narration</text>
+    
+    <!-- VideoGen Agent -->
+    <rect x="970" y="470" width="160" height="40" rx="5" fill="#ffffff" stroke="#3f51b5" stroke-width="1"/>
+    <text x="1050" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#3f51b5">VideoGen Agent</text>
+    <text x="1050" y="502" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#3f51b5">Video assembly</text>
+    
+    <!-- Editor Agent -->
+    <rect x="970" y="520" width="160" height="25" rx="5" fill="#ffffff" stroke="#3f51b5" stroke-width="1"/>
+    <text x="1050" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#3f51b5">Editor Agent</text>
+  </g>
+  
+  <!-- Queue/Message System -->
+  <g id="messaging">
+    <rect x="1200" y="300" width="150" height="80" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" filter="url(#shadow)"/>
+    <text x="1275" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff9800">Service Bus</text>
+    <text x="1275" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff9800">Message Queue</text>
+    <text x="1275" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff9800">Event Orchestration</text>
+  </g>
+  
+  <!-- Database -->
+  <g id="database">
+    <rect x="1200" y="400" width="150" height="80" rx="10" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" filter="url(#shadow)"/>
+    <text x="1275" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4caf50">Azure SQL Database</text>
+    <text x="1275" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4caf50">Video Metadata</text>
+    <text x="1275" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#4caf50">Job Status</text>
+  </g>
+  
+  <!-- Monitoring -->
+  <g id="monitoring">
+    <rect x="50" y="600" width="300" height="80" rx="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#9c27b0">Azure Monitor + Application Insights</text>
+    <text x="200" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9c27b0">• Performance Monitoring • Logging • Alerting</text>
+    <text x="200" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#9c27b0">• Resource Usage • Error Tracking</text>
+  </g>
+  
+  <!-- Security -->
+  <g id="security">
+    <rect x="400" y="600" width="250" height="80" rx="10" fill="#ffebee" stroke="#f44336" stroke-width="2" filter="url(#shadow)"/>
+    <text x="525" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f44336">Azure Security</text>
+    <text x="525" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f44336">• Key Vault (API Keys) • Azure AD (Authentication)</text>
+    <text x="525" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f44336">• RBAC • Network Security Groups</text>
+  </g>
+  
+  <!-- DevOps -->
+  <g id="devops">
+    <rect x="700" y="600" width="250" height="80" rx="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" filter="url(#shadow)"/>
+    <text x="825" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2196f3">Azure DevOps</text>
+    <text x="825" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2196f3">• CI/CD Pipelines • Container Registry</text>
+    <text x="825" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2196f3">• Infrastructure as Code (ARM/Bicep)</text>
+  </g>
+  
+  <!-- Arrows -->
+  <!-- User to Frontend -->
+  <line x1="200" y1="130" x2="250" y2="130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Frontend to API Gateway -->
+  <line x1="430" y1="140" x2="480" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- API Gateway to Document Processing -->
+  <line x1="520" y1="200" x2="200" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Document Processing to Storage -->
+  <line x1="250" y1="300" x2="300" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Storage to Vector DB -->
+  <line x1="460" y1="300" x2="500" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Vector DB to RAG -->
+  <line x1="660" y1="300" x2="700" y2="300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- RAG to AI Services -->
+  <line x1="790" y1="350" x2="500" y2="400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- AI Services to Agents -->
+  <line x1="900" y1="475" x2="950" y2="400" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Agents to Messaging -->
+  <line x1="1150" y1="340" x2="1200" y2="340" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Agents to Database -->
+  <line x1="1150" y1="440" x2="1200" y2="440" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Data Flow Labels -->
+  <text x="225" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">HTTP</text>
+  <text x="455" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">API Calls</text>
+  <text x="275" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Files</text>
+  <text x="480" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Embeddings</text>
+  <text x="680" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Context</text>
+  <text x="1175" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">Messages</text>
+  
+  <!-- Cost Optimization Note -->
+  <g id="cost-note">
+    <rect x="1000" y="600" width="350" height="80" rx="10" fill="#fff9c4" stroke="#f9a825" stroke-width="2" filter="url(#shadow)"/>
+    <text x="1175" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f9a825">Cost Optimization</text>
+    <text x="1175" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f9a825">• Auto-scaling Container Apps • Consumption-based Functions</text>
+    <text x="1175" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f9a825">• Spot VMs for batch processing • Blob Storage lifecycle policies</text>
+    <text x="1175" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#f9a825">• Reserved Instances for predictable workloads</text>
+  </g>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="50" y="720" width="1300" height="120" rx="10" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
+    <text x="700" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Architecture Components Legend</text>
+    
+    <text x="80" y="770" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Compute:</text>
+    <text x="80" y="785" font-family="Arial, sans-serif" font-size="10" fill="#333">• Container Apps (AI Agents) • Functions (Document Processing) • Static Web Apps (Frontend)</text>
+    
+    <text x="80" y="805" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Storage:</text>
+    <text x="80" y="820" font-family="Arial, sans-serif" font-size="10" fill="#333">• Blob Storage (Files/Videos) • Cognitive Search (Vector DB) • SQL Database (Metadata)</text>
+    
+    <text x="700" y="770" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">AI Services:</text>
+    <text x="700" y="785" font-family="Arial, sans-serif" font-size="10" fill="#333">• Azure OpenAI (LLM) • Computer Vision • Speech Services • Video Indexer • Media Services</text>
+    
+    <text x="700" y="805" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Integration:</text>
+    <text x="700" y="820" font-family="Arial, sans-serif" font-size="10" fill="#333">• API Management • Service Bus • Event Grid • Application Insights</text>
+  </g>
+</svg>

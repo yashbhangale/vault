@@ -8,3 +8,9 @@ gpt 4.1 in case of 3.5 lol
 
 
 https://www.youtube.com/watch?v=djDZHAi75dk
+
+
+https://www.youtube.com/watch?v=U1_nzjWUpL4
+
+
+https://www.youtube.com/watch?v=kb7guXEG7CM
