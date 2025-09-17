@@ -1,4 +1,9 @@
 
+
+
+## [[EC2 in aws]]
+
+
 ### ✅ **1. RDS: Relational | DynamoDB: Non-Relational (Vendor Lock-in)**
 
 - **RDS (Relational Database Service)**:
