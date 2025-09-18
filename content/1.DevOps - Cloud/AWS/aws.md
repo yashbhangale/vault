@@ -3,6 +3,14 @@
 
 ## [[EC2 in aws]]
 
+## [[EBS in AWS]]
+
+## [[AMI in AWS]]
+
+## [[EC2 instance store]]
+
+## [[EFS in aws]]
+
 
 ### ✅ **1. RDS: Relational | DynamoDB: Non-Relational (Vendor Lock-in)**
 
