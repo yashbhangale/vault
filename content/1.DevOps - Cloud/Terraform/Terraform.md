@@ -2,6 +2,17 @@
 2. terraform is agent less
 3. terraform is declarative
 
+## [[Terraform interview]]
+
+
+in short we have to remember only 4 commands
+
+terraform init
+terraform plan
+terraform apply -auto-approve
+terraform destory
+
+
 
 **Terraform** is an **open-source Infrastructure as Code (IaC)** tool created by **HashiCorp**. It allows you to define, provision, and manage cloud and on-premise infrastructure using a declarative configuration language called **HashiCorp Configuration Language (HCL)**.
 
@@ -69,6 +80,12 @@ terraform.tfstate --> state file
     ```
     terraform apply
     ```
+
+if i dont want to type yes then we can use this command
+
+terraform apply -auto-approve
+
+
 
 5. **Destroy Infrastructure**
 
