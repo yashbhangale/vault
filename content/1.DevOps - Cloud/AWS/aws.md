@@ -11,6 +11,8 @@
 
 ## [[EFS in aws]]
 
+## [[ELB (Elastic load balancer)]]
+
 
 ### ✅ **1. RDS: Relational | DynamoDB: Non-Relational (Vendor Lock-in)**
 

@@ -46,4 +46,31 @@ While workflows orchestrate automation, actions provide the building blocks, ena
 
 ---
 
+Key Concepts:
 
+- **Workflows:**
+    Automated processes defined in YAML files within the `.github/workflows` directory of a repository. They are triggered by specific events.
+
+- **Events:**
+    Activities within a repository that initiate a workflow, such as pushes, pull request creation, issue updates, or scheduled times.
+
+- **Jobs:**
+    Individual tasks within a workflow that run in parallel or sequentially. Each job executes on a designated runner.
+
+- **Runners:**
+    Virtual machines (GitHub-hosted or self-hosted) that execute the jobs within a workflow. They can be provisioned for various operating systems like Ubuntu, Windows, and macOS.
+
+- **Steps:**
+    A sequence of commands or actions executed within a job on a runner. Steps can include cloning the repository, installing dependencies, running tests, or deploying code.
+
+- **Actions:**
+    Reusable units of code that perform specific tasks within a step, often found in the GitHub Marketplace or created as custom actions.
+
+Functionality:
+
+GitHub Actions can automate various aspects of the software development lifecycle, including:
+
+- **CI/CD:** Building, testing, and deploying code automatically upon specified events.
+- **Code Quality and Security:** Running linters, static analysis tools, and security scans.
+- **Repository Automation:** Managing issues and pull requests, automating release processes, and handling dependency updates.
+- **Deployment:** Deploying applications to various cloud providers or on-premises environments
