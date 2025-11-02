@@ -2,10 +2,6 @@
 title: Yash Bhangale's Notes
 ---
 
-quartz usage:
-npx quartz build --serve
-
-
 - Github : https://github.com/yashbhangale
 - My Portfolio : https://hiremefor.cloud
 - linkedin : https://linkedin.com/in/yashbhangale
@@ -15,14 +11,22 @@ npx quartz build --serve
 
 [[todo]]
 
-[[aws]]
+## [[Books]]
 
-[[1. DevOps Index]]
+## [[Self help]]
 
-[[0. DSA Index]]
+## [[aws]]
 
-[[1. Azure Index]]
+## [[DevOps]]
 
-[[Microsoft Entra ID]]
+## [[DSA]]
 
-lalalala
+## [[Azure]]
+
+
+quartz usage:
+npx quartz build --serve
+
+
+
+
