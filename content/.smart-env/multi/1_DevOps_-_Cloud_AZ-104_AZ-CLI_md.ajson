@@ -1,0 +1,2 @@
+
+"smart_sources:1.DevOps - Cloud/AZ-104/AZ-CLI.md": {"path":"1.DevOps - Cloud/AZ-104/AZ-CLI.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"1qgsdfi","at":1761844685359},"class_name":"SmartSource","last_import":{"mtime":1761844426585,"size":462,"at":1761844685455,"hash":"1qgsdfi"},"blocks":{"#---frontmatter---":[1,4],"#Start the vm":[8,13],"#Start the vm#{1}":[10,13],"#Stop":[14,19],"#Stop#{1}":[16,19],"#Create an vm":[20,34],"#Create an vm#{1}":[22,34]},"outlinks":[],"metadata":{"title":"AZ-104 AZ-CLI","date":"2024-12-20"},"task_lines":[]},
