@@ -90,11 +90,12 @@ jobs:
             type=ref,event=branch
             latest
       
-      - name: Build Docker image (no push)
+      - name: Build and push Docker image
+        id: build
         uses: docker/build-push-action@v5
         with:
           context: .
-          push: false
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
       
@@ -107,14 +108,6 @@ jobs:
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH'
-      
-      - name: Push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
       
       - name: Set image tag output
         id: set_output
