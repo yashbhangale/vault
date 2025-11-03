@@ -8,12 +8,11 @@ on:
   pull_request:
     branches: [ v4 ]
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
-  # Required for GITHUB_TOKEN to push packages to GHCR
-  # (applies to all jobs unless overridden)
-  permissions:
-    contents: read
-    packages: write
   test:
     name: Unit Testing
     runs-on: ubuntu-latest
