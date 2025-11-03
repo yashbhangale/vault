@@ -1,0 +1,36 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: vault-app-ingress
+  namespace: app
+  annotations:
+    # Add additional annotations as needed for your specific ingress controller
+    # nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: 20api.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: vault-app
+            port:
+              number: 80
+  - host: www.20api.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: vault-app
+            port:
+              number: 80
+  # Uncomment and configure if you want TLS
+  # tls:
+  # - hosts:
+  #   - vault-app.example.com
+  #   secretName: vault-app-tls

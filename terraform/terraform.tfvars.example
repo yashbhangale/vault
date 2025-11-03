@@ -1,0 +1,28 @@
+# AWS Configuration
+aws_region = "eu-north-1"
+
+# Cluster Configuration
+cluster_name         = "20api-eks"
+cluster_version      = "1.28"
+
+# Node Group Configuration
+node_instance_type   = "t3.medium"
+node_desired_capacity = 1
+node_min_capacity    = 1
+node_max_capacity    = 1
+
+# Domain Configuration
+domain_name = "20api.com"
+argocd_host = "argo.20api.com"
+
+# GitHub Repository Configuration
+github_repo_url  = "https://github.com/yashbhangale/vault.git"
+github_repo_path = "kubernetes"
+
+# Tags (optional)
+tags = {
+  Project   = "20api"
+  ManagedBy = "Terraform"
+  Environment = "production"
+}
+
