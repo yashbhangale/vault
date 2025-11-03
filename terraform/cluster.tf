@@ -48,9 +48,10 @@ module "eks" {
   # Enable IAM OIDC Provider for service accounts
   enable_irsa = true
 
-  # Disable managed aws-auth ConfigMap to avoid circular dependency
-  # We'll manage it separately or let AWS handle it
-  manage_aws_auth_configmap = false
+  # Enable managed aws-auth ConfigMap - required for nodes to join cluster
+  # This is safe now because we use module outputs directly in provider config
+  # (no circular dependency since module outputs are computed values)
+  manage_aws_auth_configmap = true
 
   # EKS Managed Node Groups
   eks_managed_node_groups = {
@@ -60,6 +61,11 @@ module "eks" {
       max_size     = var.node_max_capacity
 
       instance_types = [var.node_instance_type]
+
+      # Use Amazon Linux 2023 (AL2023) instead of deprecated AL2
+      # AL2 AMIs are deprecated after November 26, 2025
+      # AL2023 provides: secure-by-default, SELinux, IMDSv2-only, faster boot times
+      ami_type = "AL2023_x86_64_STANDARD"
 
       # Enable launch template
       use_custom_launch_template = false
@@ -75,20 +81,6 @@ module "eks" {
   tags = var.tags
 }
 
-# Data sources for Kubernetes provider configuration
+# Data source for AWS account ID (used elsewhere if needed)
 data "aws_caller_identity" "current" {}
-
-data "aws_eks_cluster" "cluster" {
-  name = module.eks.cluster_name
-  depends_on = [module.eks]
-}
-
-data "aws_eks_cluster_auth" "cluster" {
-  name = module.eks.cluster_name
-  depends_on = [module.eks]
-}
-
-# Note: Kubernetes and Helm providers are configured automatically
-# using the data sources below. They will be used by helm_release 
-# and kubernetes_manifest resources after the cluster is created.
 

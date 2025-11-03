@@ -91,17 +91,35 @@ Review the planned changes carefully.
 
 ### 4. Apply the Infrastructure
 
+**Important:** Due to provider initialization requirements, the infrastructure must be applied in two stages:
+
+#### Stage 1: Create the EKS Cluster
+
+First, create the EKS cluster and VPC:
+
+```bash
+terraform apply -target=module.eks -target=module.vpc -target=data.aws_eks_cluster.cluster -target=data.aws_eks_cluster_auth.cluster
+```
+
+Type `yes` when prompted. This will take approximately 10-15 minutes.
+
+#### Stage 2: Apply Remaining Resources
+
+After the cluster is created, apply the remaining resources (Helm charts and Kubernetes manifests):
+
 ```bash
 terraform apply
 ```
 
-Type `yes` when prompted, or use `-auto-approve` flag:
+Type `yes` when prompted. This will take approximately 5-10 minutes.
+
+**Alternative:** If you prefer a single command (may show plan-time warnings but will work during apply):
 
 ```bash
 terraform apply -auto-approve
 ```
 
-**Note:** This will take approximately 15-20 minutes to complete.
+**Note:** Total time is approximately 15-20 minutes.
 
 ### 5. Configure kubectl
 
@@ -238,6 +256,16 @@ github_repo_path = "kubernetes"
 ```
 
 ## Troubleshooting
+
+### Kubernetes Provider Error: "cannot create REST client: no client config"
+
+This error occurs during `terraform plan` because the Kubernetes provider cannot initialize without an existing cluster. This is expected behavior.
+
+**Solution:** Apply the infrastructure in two stages (see Step 4 in Quick Start):
+1. First apply to create the EKS cluster
+2. Then apply the remaining resources
+
+The error will resolve once the cluster exists after the first apply stage.
 
 ### Cluster Creation Fails
 
