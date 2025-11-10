@@ -13,9 +13,9 @@ title: Yash Bhangale's Notes
 
 ## [[Books]]
 
-## [[Self help]]
+## [[0.Self help]]
 
-## [[aws]]
+## [[0.aws]]
 
 ## [[DevOps]]
 
