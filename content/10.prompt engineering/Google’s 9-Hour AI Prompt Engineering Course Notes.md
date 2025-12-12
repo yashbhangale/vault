@@ -50,6 +50,7 @@ biases present in that content, including those related to gender, race
 
 ![[Pasted image 20251212152842.png]]
 
+---
 # Module 2
 Prompts Example for Day to Day life
 
@@ -77,7 +78,7 @@ Prompts Example for Day to Day life
 ![[Pasted image 20251212153731.png]]
 
 
-
+---
 # Module 4
 
 **Prompt Chaining**: Prompt chaining guides gen ai tool through series of
@@ -92,6 +93,7 @@ process
 
 **Meta prompting** : Ai will come up with a prompt
 
+---
 # Module 5 Agents
 
 ![[Pasted image 20251212153912.png]]
