@@ -14,6 +14,7 @@ In Kubernetes, pods often get stuck in Pending because:
 Traditional autoscaling:
 - Works with fixed node groups
 - Scales slowly
+- 
 - Often wastes money  
 
 Karpenter fixes this by provisioning the right node at the right time.
