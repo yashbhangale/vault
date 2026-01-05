@@ -50,11 +50,41 @@ ul.toc-content.overflow {
   & > li > a {
     color: var(--dark);
     opacity: 0.35;
-    transition:
-      0.5s ease opacity,
-      0.3s ease color;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 60%;
+      background: linear-gradient(180deg, var(--secondary), var(--tertiary));
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+    
+    &:hover {
+      opacity: 0.9;
+      background: var(--highlight);
+      transform: translateX(4px);
+      color: var(--secondary);
+    }
+    
     &.in-view {
-      opacity: 0.75;
+      opacity: 0.9;
+      background: linear-gradient(90deg, var(--highlight), transparent);
+      color: var(--secondary);
+      font-weight: 600;
+      
+      &::before {
+        width: 3px;
+      }
     }
   }
 

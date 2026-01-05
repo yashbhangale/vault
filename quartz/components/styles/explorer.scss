@@ -42,8 +42,13 @@
 
   & .fold {
     margin-left: 0.5rem;
-    transition: transform 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0.8;
+    
+    &:hover {
+      opacity: 1;
+      color: var(--secondary);
+    }
   }
 
   @media all and ($mobile) {
@@ -124,10 +129,35 @@ button.desktop-explorer {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+      position: relative;
+
+      &:hover {
+        opacity: 1;
+        background: var(--highlight);
+        transform: translateX(4px);
+        color: var(--secondary);
+      }
 
       &.active {
         opacity: 1;
         color: var(--tertiary);
+        background: linear-gradient(90deg, var(--highlight), transparent);
+        font-weight: 600;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 3px;
+          background: linear-gradient(180deg, var(--secondary), var(--tertiary));
+          border-radius: 0 2px 2px 0;
+        }
       }
     }
   }
@@ -197,7 +227,7 @@ button.desktop-explorer {
   margin-right: 5px;
   color: var(--secondary);
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   backface-visibility: visible;
   flex-shrink: 0;
 }
@@ -208,6 +238,8 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 
 .folder-icon:hover {
   color: var(--tertiary);
+  transform: scale(1.2);
+  filter: drop-shadow(0 2px 4px rgba(59, 130, 246, 0.3));
 }
 
 .explorer {

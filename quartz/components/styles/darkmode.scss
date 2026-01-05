@@ -9,6 +9,7 @@
   margin: 0;
   text-align: inherit;
   flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   & svg {
     position: absolute;
@@ -16,7 +17,20 @@
     height: 20px;
     top: calc(50% - 10px);
     fill: var(--darkgray);
-    transition: opacity 0.1s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &:hover {
+    transform: rotate(20deg) scale(1.15);
+    
+    & svg {
+      fill: var(--secondary);
+      filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
+    }
+  }
+  
+  &:active {
+    transform: rotate(180deg) scale(0.9);
   }
 }
 
