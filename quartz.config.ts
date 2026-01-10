@@ -72,6 +72,10 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Excalidraw({
+        width: "100%",
+        center: true,
+      }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
