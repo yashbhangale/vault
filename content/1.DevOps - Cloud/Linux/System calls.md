@@ -19,9 +19,9 @@ A **system call** is a way for a program (user space) to **request services from
 👉 Because:
 
 - Apps **cannot directly access hardware**
-    
+
 - Only the **kernel has full control**
-    
+
 
 So apps say:
 
@@ -34,11 +34,11 @@ So apps say:
 Think of it like this:
 
 - 👨‍💻 You (user/app)
-    
+
 - 🧑‍🍳 Waiter (system call interface)
-    
+
 - 👨‍🍳 Kitchen (kernel)
-    
+
 
 👉 You don’t go into the kitchen directly  
 👉 You place an order via waiter → kitchen executes
@@ -50,20 +50,20 @@ Think of it like this:
 Without system calls:
 
 - Apps could directly access hardware ❌ (dangerous)
-    
+
 - System would crash easily ❌
-    
+
 - No security ❌
-    
+
 
 👉 System calls ensure:
 
 - ✅ Security
-    
+
 - ✅ Stability
-    
+
 - ✅ Controlled access
-    
+
 
 ---
 
@@ -72,19 +72,19 @@ Without system calls:
 ### Example: `cat file.txt`
 
 1. You run command → `cat`
-    
+
 2. `cat` needs to read file
-    
+
 3. It makes a **system call** → `read()`
-    
+
 4. Kernel:
-    
-    - Checks permissions
-        
-    - Reads file from disk
-        
+
+- Checks permissions
+
+- Reads file from disk
+
 5. Kernel returns data → app prints it
-    
+
 
 ---
 
@@ -101,40 +101,40 @@ User App → System Call → Kernel → Hardware → Response → App
 ## 1. File Management
 
 - `open()`, `read()`, `write()`, `close()`
-    
+
 
 👉 Used when:
 
 - Reading logs
-    
+
 - Writing files
-    
+
 
 ---
 
 ## 2. Process Management
 
 - `fork()`, `exec()`, `exit()`, `wait()`
-    
+
 
 👉 Example:
 
 - Running any command → new process created
-    
+
 
 ---
 
 ## 3. Device Management
 
 - Interacting with hardware (disk, printer, etc.)
-    
+
 
 ---
 
 ## 4. Information Management
 
 - `getpid()`, `getuid()`
-    
+
 
 👉 Used to get system/process info
 
@@ -143,14 +143,14 @@ User App → System Call → Kernel → Hardware → Response → App
 ## 5. Communication (IPC)
 
 - Pipes, shared memory, sockets
-    
+
 
 👉 Used in:
 
 - Microservices
-    
+
 - Network apps
-    
+
 
 ---
 
@@ -170,9 +170,9 @@ User App → System Call → Kernel → Hardware → Response → App
 ## 🔹 Context Switching
 
 - CPU switches between user & kernel
-    
+
 - Slight overhead (important in performance tuning)
-    
+
 
 ---
 
@@ -187,7 +187,7 @@ cat /var/log/syslog
 👉 Internally:
 
 - `open()` → `read()` → `close()`
-    
+
 
 ---
 
@@ -200,7 +200,6 @@ ls
 👉 Internally:
 
 - `fork()` → `exec()`
-    
 
 ---
 
@@ -213,7 +212,7 @@ curl google.com
 👉 Uses:
 
 - `socket()`, `connect()`, `send()`, `recv()`
-    
+
 
 ---
 
@@ -228,7 +227,7 @@ strace ls
 👉 Output shows:
 
 - All system calls used by `ls`
-    
+
 
 Example:
 
