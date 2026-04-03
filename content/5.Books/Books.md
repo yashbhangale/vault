@@ -1,3 +1,7 @@
+---
+title: Books
+tags: [books]
+---
 ## [[IKIGAI.pdf]]
 
 ## [[Attack mode by shwetabh gangwar.pdf]]

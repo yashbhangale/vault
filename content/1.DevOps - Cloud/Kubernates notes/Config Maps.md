@@ -1,3 +1,7 @@
+---
+title: Config Maps
+tags: [devops---cloud, kubernates-notes]
+---
 ![[Pasted image 20250224161731.png]]'''
 
 

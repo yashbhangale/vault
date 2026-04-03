@@ -1,3 +1,7 @@
+---
+title: cluster maintainance
+tags: [devops---cloud, kubernates-notes]
+---
 operating system upgrade 
 ```
 kubectl drain node-1

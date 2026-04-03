@@ -1,3 +1,7 @@
+---
+title: CI-CD
+tags: [devops---cloud, cicd]
+---
 
 ### 1. What is CI/CD, and why is it important?
 

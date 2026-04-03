@@ -1,5 +1,6 @@
 ---
 title: Java Learning Big O notation
+tags: [java-learning]
 date: 2025-01-10
 ---
 

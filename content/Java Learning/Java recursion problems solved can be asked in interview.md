@@ -1,9 +1,7 @@
 ---
 title: Java recursion problems solved can be asked in interview
+tags: [java-learning]
 date: 2024-09-28
-categories:
-  - java
-  - placement
 ---
 ## 1. Tower of Hanoi 
 

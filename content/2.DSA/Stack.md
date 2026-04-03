@@ -1,5 +1,6 @@
 ---
 title: DSA Stack
+tags: [dsa]
 date: 2024-12-25
 ---
 

@@ -1,3 +1,8 @@
+---
+title: Docker file
+tags: [docker]
+---
+
 Summary of what’s in place:
 
 ---

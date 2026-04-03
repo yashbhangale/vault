@@ -1,5 +1,6 @@
 ---
 title: DSA Single linked list
+tags: [dsa]
 date: 2025-01-10
 ---
 

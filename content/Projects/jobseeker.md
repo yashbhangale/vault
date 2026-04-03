@@ -1,3 +1,7 @@
+---
+title: jobseeker
+tags: [projects]
+---
 I'll provide you with a comprehensive walkthrough of your job tracker project. Let me first explore the codebase structure and then give you a detailed step-by-step explanation.
 Read file: package.json
 Read file: app/page.tsx

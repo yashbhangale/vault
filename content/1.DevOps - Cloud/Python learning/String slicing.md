@@ -1,3 +1,7 @@
+---
+title: String slicing
+tags: [devops---cloud, python-learning]
+---
 ```python
 b = "Hello, World!"
 print(b[2:5])

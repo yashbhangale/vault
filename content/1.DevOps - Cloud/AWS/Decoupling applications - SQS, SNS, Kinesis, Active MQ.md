@@ -1,3 +1,7 @@
+---
+title: Decoupling applications - SQS, SNS, Kinesis, Active MQ
+tags: [devops---cloud, aws]
+---
 SQS queues
 
 ### **1. Introduction**

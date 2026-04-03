@@ -1,3 +1,7 @@
+---
+title: Python_interview
+tags: [python-learning]
+---
 # 🐍 Complete Python Interview Preparation Guide
 **Dost, ye file padh kar tu complete Python interview ready ho jaega! Sab kuch ek jagah hai.**
 

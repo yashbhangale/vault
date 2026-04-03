@@ -1,3 +1,7 @@
+---
+title: IAM in aws
+tags: [devops---cloud, aws]
+---
 
 ## **1. Introduction to IAM**
 

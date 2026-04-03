@@ -1,3 +1,6 @@
+---
+title: Hinglish_sagemaker_guide_to_deploy_model
+---
 
 Tumhara app **FastAPI + InternVL (GPU)** wala hai, isliye SageMaker pe deploy karne ke liye MLOps POV se yeh cheezen karna padengi.
 

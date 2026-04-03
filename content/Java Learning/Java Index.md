@@ -1,10 +1,7 @@
 ---
 title: syllabus for DSA
+tags: [java-learning]
 date: 2024-10-25
-categories:
-  - dsa
-  - syllabus
-draft:
 ---
 
 

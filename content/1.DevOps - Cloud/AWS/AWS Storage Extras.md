@@ -1,3 +1,7 @@
+---
+title: AWS Storage Extras
+tags: [devops---cloud, aws]
+---
 Snow family overview
 Snowball into glacier
 Amazon FSx

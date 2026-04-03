@@ -1,3 +1,7 @@
+---
+title: AWS S3
+tags: [devops---cloud, aws]
+---
 intro
 bucket policy
 versioning

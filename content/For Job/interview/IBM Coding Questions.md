@@ -1,5 +1,6 @@
 ---
 title: interview IBM Coding Questions
+tags: [for-job, interview]
 date: 2025-01-10
 ---
 

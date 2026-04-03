@@ -1,3 +1,7 @@
+---
+title: Route 53
+tags: [devops---cloud, aws]
+---
 DNS
 
 route 53 registering domain

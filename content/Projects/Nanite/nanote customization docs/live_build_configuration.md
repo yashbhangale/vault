@@ -1,3 +1,7 @@
+---
+title: live_build_configuration
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Nanite Live-Build Configuration Guide
 
 This document provides a step-by-step walkthrough for creating the Live-build configuration for Nanite, a specialized Debian-based Linux distribution for AI engineers and Vibe Coders.

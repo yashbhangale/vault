@@ -1,3 +1,7 @@
+---
+title: Scaling in k8s
+tags: [devops---cloud, kubernates-notes]
+---
 ![[Pasted image 20250312162236.png]]
 
 

@@ -1,5 +1,6 @@
 ---
 title: interview Props (Properties)
+tags: [for-job, interview]
 date: 2024-12-24
 ---
 

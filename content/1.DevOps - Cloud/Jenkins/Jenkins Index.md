@@ -1,5 +1,6 @@
 ---
 title: Jenkins Jenkins Index
+tags: [devops---cloud, jenkins]
 date: 2025-01-10
 ---
 

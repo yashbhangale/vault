@@ -1,3 +1,7 @@
+---
+title: Microsoft Entra ID
+tags: [devops---cloud, az-104]
+---
 Yes, you're absolutely right! ✅
 
 ### 🔄 **Azure Active Directory (Azure AD)** has been **rebranded to**:

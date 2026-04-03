@@ -1,3 +1,7 @@
+---
+title: Misc
+tags: [prompt-engineering]
+---
 
 **Make GPT speak like human :**  
   

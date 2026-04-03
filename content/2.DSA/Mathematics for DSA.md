@@ -1,5 +1,6 @@
 ---
 title: Mathematics for Dsa
+tags: [dsa]
 date: 2025-02-22
 ---
 

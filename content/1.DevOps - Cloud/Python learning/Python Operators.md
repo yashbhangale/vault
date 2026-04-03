@@ -1,3 +1,7 @@
+---
+title: Python Operators
+tags: [devops---cloud, python-learning]
+---
 Python divides the operators in the following groups:
 
 - Arithmetic operators

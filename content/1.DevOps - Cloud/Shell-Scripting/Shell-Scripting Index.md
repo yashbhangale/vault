@@ -1,7 +1,7 @@
 ---
 title: Shell scripting
+tags: [devops---cloud, shell-scripting]
 date: 2024-06-05T11:52:01+05:30
-draft: false
 ---
 ## basics of shell scripting : 
 ### what is shell?

@@ -1,5 +1,6 @@
 ---
 title: DSA Binary Search Algo Questions
+tags: [dsa]
 date: 2025-01-10
 ---
 

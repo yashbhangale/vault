@@ -1,9 +1,6 @@
 ---
 title: bit manipulation in java
-categories:
-  - placement
-  - dsa
-  - java
+tags: [java-learning]
 date: 2024-09-22
 ---
 Bit manipulation is a powerful tool in programming that involves directly operating on bits (0s and 1s) of data.

@@ -1,5 +1,6 @@
 ---
 title: DSA Leetcode
+tags: [dsa]
 date: 2025-01-10
 ---
 

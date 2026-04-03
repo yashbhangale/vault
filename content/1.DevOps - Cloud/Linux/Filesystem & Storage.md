@@ -1,3 +1,7 @@
+---
+title: Filesystem & Storage
+tags: [devops---cloud, linux]
+---
 
 #  1. What is Filesystem in Linux?
 

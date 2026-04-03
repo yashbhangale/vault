@@ -1,3 +1,7 @@
+---
+title: Karpenter
+tags: [devops---cloud, devops-tools]
+---
 Karpenter is a **Kubernetes autoscaling** tool used in DevOps to automatically create and remove cloud VMs (nodes) based on what your workloads actually need.
 
 >Karpenter is an intelligent Kubernetes node autoscaler that provides exactly the infrastructure your workloads need, when they need it.

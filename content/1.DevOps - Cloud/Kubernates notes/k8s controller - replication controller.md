@@ -1,5 +1,6 @@
 ---
 title: Kubernates notes k8s controller - replication controller
+tags: [devops---cloud, kubernates-notes]
 date: 2025-02-21
 ---
 

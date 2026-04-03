@@ -1,3 +1,7 @@
+---
+title: 3 crazy workflows
+tags: [devops---cloud, git]
+---
 
 ![[Pasted image 20260206131226.png]]
 

@@ -1,3 +1,7 @@
+---
+title: Terraform Project Structure
+tags: [devops---cloud, terraform]
+---
 
 
 ![[Pasted image 20260117174425.png]]

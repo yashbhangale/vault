@@ -1,5 +1,6 @@
 ---
 title: interview Java revision udemy ajink wala
+tags: [for-job, interview]
 date: 2025-01-10
 ---
 

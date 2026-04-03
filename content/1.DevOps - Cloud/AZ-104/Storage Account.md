@@ -1,5 +1,6 @@
 ---
 title: AZ-104 Storage Account
+tags: [devops---cloud, az-104]
 date: 2025-01-10
 ---
 

@@ -1,3 +1,7 @@
+---
+title: Resume optimiser prompts
+tags: [prompt-engineering]
+---
 
 # 1. Cloude
 

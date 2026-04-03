@@ -1,3 +1,7 @@
+---
+title: Computer Networking
+tags: [devops---cloud, interview-prep]
+---
 
 ### 🔹 Q1: What is an IP address?
 **A:** An IP (Internet Protocol) address is a unique identifier assigned to each device connected to a network. It helps in locating and identifying the device on the internet or local network.

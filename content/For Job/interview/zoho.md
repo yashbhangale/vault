@@ -1,5 +1,6 @@
 ---
 title: interview zoho
+tags: [for-job, interview]
 date: 2024-12-20
 ---
 

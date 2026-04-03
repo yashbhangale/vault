@@ -1,3 +1,7 @@
+---
+title: resume edists for devops
+tags: [for-job]
+---
 
 
 Nanite - Linux Distribution for DevOps And Cloud Environments Project Link

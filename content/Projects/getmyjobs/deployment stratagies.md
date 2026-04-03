@@ -1,3 +1,7 @@
+---
+title: deployment stratagies
+tags: [projects, getmyjobs]
+---
 
 ## 🎯 Final Recommendation
 

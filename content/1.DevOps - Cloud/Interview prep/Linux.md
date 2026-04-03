@@ -1,3 +1,7 @@
+---
+title: Linux
+tags: [devops---cloud, interview-prep]
+---
 
 ## 🐧 Linux for DevOps – Interview Questions & Answers
 

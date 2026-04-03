@@ -1,3 +1,7 @@
+---
+title: Resume tips
+tags: [for-job]
+---
 
 
 1. skills section at top

@@ -1,3 +1,7 @@
+---
+title: Boot process (BIOS → GRUB → Kernel → Init)
+tags: [devops---cloud, linux]
+---
 Linux boot starts with BIOS/UEFI initializing hardware, then GRUB loads the kernel and initramfs, the kernel initializes the system, and finally systemd starts all user-space services.
 
 Power ON

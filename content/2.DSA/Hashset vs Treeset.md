@@ -1,5 +1,6 @@
 ---
 title: DSA Hashset vs Treeset
+tags: [dsa]
 date: 2025-01-10
 ---
 

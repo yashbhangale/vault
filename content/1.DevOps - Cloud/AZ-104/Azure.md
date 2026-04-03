@@ -1,8 +1,7 @@
 ---
 title: Azure Index
+tags: [devops---cloud, az-104]
 date: 2024-12-20
-tags:
-  - azure
 ---
 # [[Azure Blob Storage]]
 

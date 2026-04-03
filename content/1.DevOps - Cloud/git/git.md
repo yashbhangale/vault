@@ -1,5 +1,6 @@
 ---
 title: git git
+tags: [devops---cloud, git]
 date: 2024-12-20
 ---
 

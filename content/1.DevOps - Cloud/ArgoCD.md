@@ -1,5 +1,6 @@
 ---
 title: Kubernates notes ArgoCD
+tags: [devops---cloud]
 date: 2025-01-22
 ---
 ```

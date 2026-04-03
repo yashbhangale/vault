@@ -1,5 +1,6 @@
 ---
 title: self learnings and improvements how to be a good communicator
+tags: [self-help]
 date: 2024-12-20
 ---
 

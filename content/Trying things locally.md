@@ -1,3 +1,6 @@
+---
+title: Trying things locally
+---
 Bilkul, chalo bilkul **zero se step‑by‑step** karte hain, is assumption ke saath:
 	
 - Tumhare paas abhi **sirf `fast_prod_new.py` + `Dockerfile` + `requirements.txt`** hain  

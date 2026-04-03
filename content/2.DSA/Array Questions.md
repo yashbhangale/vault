@@ -1,5 +1,6 @@
 ---
 title: DSA Array Questions
+tags: [dsa]
 date: 2025-01-10
 ---
 

@@ -1,3 +1,7 @@
+---
+title: nanite_branding_complete_guide
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Nanite Linux: Complete Branding and Customization Guide
 
 This comprehensive guide provides detailed instructions for customizing and branding Nanite Linux, a specialized Debian-based distribution for AI engineers and Vibe Coders. It covers all aspects of branding, from OS customization to Calamares installer theming.

@@ -1,3 +1,7 @@
+---
+title: Python Datatypes
+tags: [devops---cloud, python-learning]
+---
 
 ##### Built in Datatypes
 

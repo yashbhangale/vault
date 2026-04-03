@@ -1,10 +1,7 @@
 ---
 title: Recursion in java
+tags: [java-learning]
 date: 2024-09-25
-categories:
-  - java
-  - dsa
-  - placement
 ---
 # Java Recursion
 

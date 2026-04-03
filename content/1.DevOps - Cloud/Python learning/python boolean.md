@@ -1,3 +1,7 @@
+---
+title: python boolean
+tags: [devops---cloud, python-learning]
+---
 
 ```python
 print(10 > 9)

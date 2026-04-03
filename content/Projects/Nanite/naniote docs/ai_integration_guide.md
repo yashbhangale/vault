@@ -1,3 +1,7 @@
+---
+title: ai_integration_guide
+tags: [projects, nanite, naniote-docs]
+---
 # AI Models and Applications Integration Guide for Nanite
 
 This document provides a comprehensive guide for integrating AI models and applications into the Nanite Linux distribution. It details the process of selecting, configuring, and integrating various AI components to create a cohesive AI-powered operating system.

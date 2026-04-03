@@ -1,3 +1,7 @@
+---
+title: Stoicism
+tags: [self-help]
+---
 
 
 Stoicism is a philosophy that teaches how to live a good life by focusing on what you can control and accepting what you can’t. It started in ancient Greece around 300 BCE, founded by Zeno of Citium, and later became popular through philosophers like Seneca, Epictetus, and Marcus Aurelius.

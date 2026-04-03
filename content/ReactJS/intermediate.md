@@ -1,3 +1,7 @@
+---
+title: intermediate
+tags: [reactjs]
+---
  # 1. **What are hooks in React? Name a few commonly used hooks.**
 
 ### 🔄 What Are Hooks in React?

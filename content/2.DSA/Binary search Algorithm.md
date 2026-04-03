@@ -1,5 +1,6 @@
 ---
 title: DSA Binary search Algorithm
+tags: [dsa]
 date: 2025-01-10
 ---
 

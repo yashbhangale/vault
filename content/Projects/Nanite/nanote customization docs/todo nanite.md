@@ -1,3 +1,7 @@
+---
+title: todo nanite
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Nanite Project Todo List
 
 ## Analysis and Planning

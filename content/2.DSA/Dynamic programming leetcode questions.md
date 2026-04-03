@@ -1,5 +1,6 @@
 ---
 title: 2.DSA Dynamic programming leetcode questions
+tags: [dsa]
 date: 2025-01-14
 ---
 

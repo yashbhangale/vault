@@ -1,3 +1,7 @@
+---
+title: Resume optimiser prompts
+tags: [resume]
+---
 
 # Cloude
 

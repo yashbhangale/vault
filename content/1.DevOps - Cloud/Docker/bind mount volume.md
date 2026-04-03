@@ -1,5 +1,6 @@
 ---
 title: Docker bind mount volume
+tags: [devops---cloud, docker]
 date: 2024-12-20
 ---
 

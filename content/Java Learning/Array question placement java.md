@@ -1,10 +1,7 @@
 ---
 title: Array question placement java
+tags: [java-learning]
 date: 2024-09-29
-categories:
-  - placement
-  - java
-  - arrray
 ---
 ## 1.  Compare Two Arrays in Java
 

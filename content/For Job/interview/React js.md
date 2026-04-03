@@ -1,5 +1,6 @@
 ---
 title: interview React js
+tags: [for-job, interview]
 date: 2024-12-24
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: 2.DSA Validate Binary Search tree
+tags: [dsa]
 date: 2025-01-19
 ---
 

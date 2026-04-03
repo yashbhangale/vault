@@ -1,3 +1,7 @@
+---
+title: Cloud setup Documentation
+tags: [office, cloud-arch-doc]
+---
 
 # Cloud Architecture & Deployment Plan
 

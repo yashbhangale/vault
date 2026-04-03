@@ -1,7 +1,6 @@
 ---
 title: Access Modifiers in Java
-tags:
-  - java
+tags: [java-learning]
 ---
 
 Access modifiers in Java determine the visibility and accessibility of classes, methods, and variables

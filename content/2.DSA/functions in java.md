@@ -1,5 +1,6 @@
 ---
 title: functions in java
+tags: [dsa]
 ---
 
 - In java we call functions as method

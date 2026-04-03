@@ -1,5 +1,6 @@
 ---
 title: DSA Strings and StringBuilder in java
+tags: [dsa]
 date: 2025-01-10
 ---
 

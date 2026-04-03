@@ -1,3 +1,7 @@
+---
+title: Google’s 9-Hour AI Prompt Engineering Course Notes
+tags: [prompt-engineering]
+---
 # Module 1​
 
 1)​ start writing prompts like a pro

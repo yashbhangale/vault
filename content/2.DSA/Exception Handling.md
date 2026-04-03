@@ -1,5 +1,6 @@
 ---
 title: DSA Exception Handling
+tags: [dsa]
 date: 2025-01-03
 ---
 

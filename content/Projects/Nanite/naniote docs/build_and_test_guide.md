@@ -1,3 +1,7 @@
+---
+title: build_and_test_guide
+tags: [projects, nanite, naniote-docs]
+---
 # Building and Testing Nanite ISO
 
 This document provides a comprehensive guide for building and testing the Nanite ISO image. It covers the entire process from initial build setup to testing and validation, ensuring a functional AI-powered Linux distribution.

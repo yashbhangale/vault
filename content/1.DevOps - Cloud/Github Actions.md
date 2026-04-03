@@ -1,5 +1,6 @@
 ---
 title: 1.DevOps - Cloud Github Actions
+tags: [devops---cloud]
 date: 2025-02-21
 ---
 

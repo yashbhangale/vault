@@ -1,3 +1,7 @@
+---
+title: python while loops
+tags: [devops---cloud, python-learning]
+---
 ##### Python Loops
 
 Python has two primitive loop commands:

@@ -1,3 +1,6 @@
+---
+title: Minikube
+---
 [[Install kubectl]]ls
 
 

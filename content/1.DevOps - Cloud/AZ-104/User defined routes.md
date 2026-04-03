@@ -1,5 +1,6 @@
 ---
 title: AZ-104 User defined routes
+tags: [devops---cloud, az-104]
 date: 2025-01-10
 ---
 

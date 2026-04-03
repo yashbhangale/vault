@@ -1,5 +1,6 @@
 ---
 title: resume common
+tags: [resume]
 date: 2024-12-20
 ---
 

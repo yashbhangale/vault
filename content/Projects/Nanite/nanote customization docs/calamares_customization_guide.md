@@ -1,3 +1,7 @@
+---
+title: calamares_customization_guide
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Calamares Installer Customization Guide
 
 This comprehensive guide provides detailed instructions for customizing the Calamares installer for your Nanite Linux distribution. It covers branding, theming, slideshow customization, and post-installation scripts.

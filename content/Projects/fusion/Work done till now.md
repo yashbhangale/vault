@@ -1,6 +1,6 @@
 ---
 title: work done till now
-draft: "True"
+tags: [projects, fusion]
 ---
 
 ```

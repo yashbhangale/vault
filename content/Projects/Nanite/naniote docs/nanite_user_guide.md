@@ -1,3 +1,7 @@
+---
+title: nanite_user_guide
+tags: [projects, nanite, naniote-docs]
+---
 # Nanite Linux Distribution: User Guide
 
 This comprehensive guide provides all the information you need to understand, build, and use Nanite, a specialized Debian-based Linux distribution for AI engineers and Vibe Coders.

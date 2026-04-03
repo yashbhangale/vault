@@ -1,3 +1,7 @@
+---
+title: System calls
+tags: [devops---cloud, linux]
+---
 ## 🧠 What are System Calls in Linux?
 
 ### 📊 Visual Understanding

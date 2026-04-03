@@ -1,3 +1,7 @@
+---
+title: validation_report
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Nanite Branding and Customization Validation Report
 
 This report validates the completeness and correctness of the Nanite Linux branding and customization documentation, assets, and integration commands.

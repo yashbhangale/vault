@@ -1,3 +1,7 @@
+---
+title: Hash SET
+tags: [dsa]
+---
 - no duplicated in hashset 
 
 If you're preparing for coding interviews, **HashMap-based** problems are **frequently asked** in top companies like **Google, Amazon, Microsoft, Facebook, and Apple**. Here are some of the most popular **LeetCode HashMap questions** categorized by difficulty level:

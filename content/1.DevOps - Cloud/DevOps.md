@@ -1,5 +1,6 @@
 ---
 title: DevOps - Cloud 1  DevOps Index
+tags: [devops---cloud]
 date: 2024-12-20
 ---
 

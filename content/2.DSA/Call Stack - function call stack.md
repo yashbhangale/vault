@@ -1,5 +1,6 @@
 ---
 title: 2.DSA Call Stack - function call stack
+tags: [dsa]
 date: 2025-01-14
 ---
 

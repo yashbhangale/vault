@@ -1,3 +1,7 @@
+---
+title: EFS in aws
+tags: [devops---cloud, aws]
+---
 
 ![[Pasted image 20250918221959.png]]
 

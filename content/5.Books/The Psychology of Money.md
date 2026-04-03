@@ -1,3 +1,7 @@
+---
+title: The Psychology of Money
+tags: [books]
+---
 
 Author: Morgan Housel
 

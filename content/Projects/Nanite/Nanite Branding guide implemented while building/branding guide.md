@@ -1,3 +1,7 @@
+---
+title: branding guide
+tags: [projects, nanite, nanite-branding-guide-implemented-while-building]
+---
 
 # this guide is followed while building distribution
 

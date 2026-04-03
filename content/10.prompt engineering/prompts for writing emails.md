@@ -1,3 +1,7 @@
+---
+title: prompts for writing emails
+tags: [prompt-engineering]
+---
 
 ## 1. prompts for writing welcome emails
 

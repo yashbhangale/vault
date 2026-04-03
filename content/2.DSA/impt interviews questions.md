@@ -1,3 +1,7 @@
+---
+title: impt interviews questions
+tags: [dsa]
+---
 # [[Hash Map]]
 
 # two sum  [hash tables]

@@ -1,5 +1,6 @@
 ---
 title: DSA Binary search in 2d arrays
+tags: [dsa]
 date: 2025-01-10
 ---
 

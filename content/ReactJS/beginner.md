@@ -1,3 +1,7 @@
+---
+title: beginner
+tags: [reactjs]
+---
 **1. What is React?**
 
 **React** is a JavaScript library developed by Facebook for building fast, interactive user interfaces, especially single-page applications. It uses a **component-based architecture** and a **virtual DOM** to efficiently update and render only the parts of the UI that change.

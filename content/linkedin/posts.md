@@ -1,3 +1,7 @@
+---
+title: posts
+tags: [linkedin]
+---
 Linkedin posts this week
 
 - [x] ==Model Context Protocol==

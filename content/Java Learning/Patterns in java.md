@@ -1,9 +1,7 @@
 ---
 title: Patterns in java (placements)
+tags: [java-learning]
 date: 2024-10-02
-categories:
-  - placement
-  - java
 ---
 # 1. code to print simple rectangle 
 

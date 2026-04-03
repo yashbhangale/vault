@@ -1,3 +1,7 @@
+---
+title: architecture_design
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Nanite Architecture and Software Stack Design
 
 ## Overview

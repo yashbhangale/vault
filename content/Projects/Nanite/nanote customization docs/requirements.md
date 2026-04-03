@@ -1,3 +1,7 @@
+---
+title: requirements
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Nanite Project Requirements
 
 ## Overview

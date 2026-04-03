@@ -1,5 +1,6 @@
 ---
 title: Best average and worstcases time complexity
+tags: [java-learning]
 date: 2025-01-10
 ---
 

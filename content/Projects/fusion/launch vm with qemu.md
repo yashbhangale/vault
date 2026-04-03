@@ -1,3 +1,7 @@
+---
+title: launch vm with qemu
+tags: [projects, fusion]
+---
 
 qemu-system-x86_64 \
   -enable-kvm \

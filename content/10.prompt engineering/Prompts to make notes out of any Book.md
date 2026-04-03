@@ -1,3 +1,7 @@
+---
+title: Prompts to make notes out of any Book
+tags: [prompt-engineering]
+---
 
 ### ROLE & OBJECTIVE
 

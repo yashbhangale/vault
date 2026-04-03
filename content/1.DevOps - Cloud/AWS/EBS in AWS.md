@@ -1,3 +1,7 @@
+---
+title: EBS in AWS
+tags: [devops---cloud, aws]
+---
 
 ## **Amazon EBS (Elastic Block Store)**
 

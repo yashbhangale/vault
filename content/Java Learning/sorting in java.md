@@ -1,11 +1,7 @@
 ---
 title: sorting in java
+tags: [java-learning]
 date: 2024-09-22
-categories:
-  - dsa
-  - java
-  - placement
-draft: false
 ---
 - [x] bubble Sort ✅ 2024-09-22
 - [x] selection sort ✅ 2024-09-22

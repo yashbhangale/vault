@@ -1,3 +1,7 @@
+---
+title: live_build_documentation
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Live-build Documentation for Nanite Project
 
 ## Overview

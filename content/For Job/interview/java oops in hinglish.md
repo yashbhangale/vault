@@ -1,5 +1,6 @@
 ---
 title: interview java oops in hinglish
+tags: [for-job, interview]
 date: 2024-12-27
 ---
 

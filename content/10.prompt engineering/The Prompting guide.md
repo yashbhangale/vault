@@ -1,3 +1,7 @@
+---
+title: The Prompting guide
+tags: [prompt-engineering]
+---
 **Prompting:** It is a call to action, to the large language model.  
 - LLMS are predictions Engine, its an generic completion which gives statistically best response
 

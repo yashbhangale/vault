@@ -1,5 +1,6 @@
 ---
 title: DSA contiguous memory locations
+tags: [dsa]
 date: 2025-01-10
 ---
 

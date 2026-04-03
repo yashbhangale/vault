@@ -1,8 +1,7 @@
 ---
 title: "Git configure password in linux"
+tags: [devops---cloud, git]
 date: 2024-06-05T12:24:01+05:30
-draft: false
-
 ---
 # clone the desired repo
 (git clone repourl)

@@ -1,5 +1,6 @@
 ---
 title: DSA Hashmap vs Treemap
+tags: [dsa]
 date: 2025-01-10
 ---
 

@@ -1,3 +1,7 @@
+---
+title: financial freedom 101
+tags: [self-help]
+---
 
 financial roadmap for 20s  
   

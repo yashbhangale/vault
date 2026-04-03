@@ -1,3 +1,7 @@
+---
+title: Terraform Variables
+tags: [devops---cloud, terraform]
+---
 ##[[Interview Questions _ terraform]]
 
 

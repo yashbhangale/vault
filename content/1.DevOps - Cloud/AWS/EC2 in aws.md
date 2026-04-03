@@ -1,3 +1,7 @@
+---
+title: EC2 in aws
+tags: [devops---cloud, aws]
+---
 ## **AWS EC2 (Elastic Compute Cloud)**
 
 🔹 **Definition**:  

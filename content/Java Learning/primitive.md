@@ -1,5 +1,6 @@
 ---
 title: Java Learning primitive
+tags: [java-learning]
 date: 2024-12-20
 ---
 

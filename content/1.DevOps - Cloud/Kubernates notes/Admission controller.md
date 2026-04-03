@@ -1,5 +1,6 @@
 ---
 title: Kubernates notes Admission controller
+tags: [devops---cloud, kubernates-notes]
 date: 2025-02-20
 ---
 

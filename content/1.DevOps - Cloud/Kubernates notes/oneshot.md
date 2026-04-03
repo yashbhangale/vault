@@ -1,3 +1,7 @@
+---
+title: oneshot
+tags: [devops---cloud, kubernates-notes]
+---
 ## 🔰 **Foundation**
 
 [[1. Kubernetes Overview (What & Why)]]

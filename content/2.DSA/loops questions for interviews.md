@@ -1,5 +1,6 @@
 ---
 title: DSA loops questions for interviews
+tags: [dsa]
 date: 2025-01-04
 ---
 ********

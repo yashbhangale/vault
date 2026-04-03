@@ -1,3 +1,7 @@
+---
+title: Python Tuples
+tags: [devops---cloud, python-learning]
+---
 
 
 - Tuples are used to _==store multiple items in a single variable==_.

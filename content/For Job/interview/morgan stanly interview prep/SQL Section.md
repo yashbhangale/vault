@@ -1,3 +1,7 @@
+---
+title: SQL Section
+tags: [for-job, interview, morgan-stanly-interview-prep]
+---
 
 1) Write a query to get the **second highest salary** from an employee table
 

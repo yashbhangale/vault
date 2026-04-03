@@ -1,3 +1,6 @@
+---
+title: High Level Architecture i can refer
+---
 Here’s a high-level architecture of what you need to do to move from “model on EC2” to “SageMaker + MLOps, scalable Pan India”.
 
 ---

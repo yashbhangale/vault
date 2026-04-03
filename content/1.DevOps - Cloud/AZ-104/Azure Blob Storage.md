@@ -1,3 +1,7 @@
+---
+title: Azure Blob Storage
+tags: [devops---cloud, az-104]
+---
 
 - Cloud storage solution by Microsoft Azure for storing **unstructured data** (images, videos, docs, backups).
 - "Blob" = **Binary Large Object**.

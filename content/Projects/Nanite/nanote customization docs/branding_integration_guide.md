@@ -1,3 +1,7 @@
+---
+title: branding_integration_guide
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Nanite Branding Assets Integration Guide
 
 This guide provides detailed commands and code for integrating the created branding assets into both the Nanite Linux distribution (via Live-build) and the Calamares installer. It references the specific assets created in the `nanite_project/branding_assets/` directory.

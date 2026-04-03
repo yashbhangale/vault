@@ -1,3 +1,7 @@
+---
+title: live_build_branding_workflows
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Live-build Branding and Customization Workflows
 
 This document provides detailed, actionable workflows for customizing and branding a Debian-based Linux distribution using Live-build. It covers all aspects of visual and functional customization, from basic theming to boot splash screens and login managers.

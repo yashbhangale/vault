@@ -1,3 +1,7 @@
+---
+title: commands and arguments in docker
+tags: [devops---cloud, kubernates-notes]
+---
 ![[Pasted image 20250224114507.png]]
 
 ![[Pasted image 20250224114606.png]]

@@ -1,3 +1,7 @@
+---
+title: Balancing Testosterone - A Guide for Men at 22
+tags: [self-help]
+---
 
 It appears you're experiencing symptoms of low testosterone (low T), which can significantly impact your physical and mental well-being. At 22, low T can manifest in various ways, affecting your body, mind, and emotions.
 

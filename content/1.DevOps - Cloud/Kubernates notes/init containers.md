@@ -1,3 +1,7 @@
+---
+title: init containers
+tags: [devops---cloud, kubernates-notes]
+---
 An **Init Container** in Kubernetes is a **special type of container** that runs before the main application containers in a Pod start running. It is primarily used for performing setup tasks that need to be completed before the main containers start execution.
 
 ### **Why Use Init Containers?**

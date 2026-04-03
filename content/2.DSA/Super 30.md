@@ -1,5 +1,6 @@
 ---
 title: DSA Super 30
+tags: [dsa]
 date: 2025-01-04
 ---
 

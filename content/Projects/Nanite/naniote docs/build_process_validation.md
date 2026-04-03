@@ -1,3 +1,7 @@
+---
+title: build_process_validation
+tags: [projects, nanite, naniote-docs]
+---
 # Nanite Project: Complete Build Process Documentation
 
 This document provides a comprehensive validation and documentation of the entire build process for Nanite, a specialized Debian-based Linux distribution for AI engineers and Vibe Coders. It serves as a reference guide that ties together all the individual components and steps documented in the project.

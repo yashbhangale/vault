@@ -1,3 +1,7 @@
+---
+title: All AWS Services Overview
+tags: [devops---cloud, aws]
+---
 
 # **COMPUTE SERVICES – DETAILED GIST**
 

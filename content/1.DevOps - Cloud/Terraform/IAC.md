@@ -1,3 +1,7 @@
+---
+title: IAC
+tags: [devops---cloud, terraform]
+---
 ![[Pasted image 20260211192429.png]]
 
 ![[Pasted image 20260211192628.png]]

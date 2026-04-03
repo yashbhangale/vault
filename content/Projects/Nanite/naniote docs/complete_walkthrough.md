@@ -1,3 +1,7 @@
+---
+title: complete_walkthrough
+tags: [projects, nanite, naniote-docs]
+---
 # Nanite Project: Complete Step-by-Step Walkthrough
 
 This document provides a comprehensive walkthrough for building Nanite, a specialized Debian-based Linux distribution for AI engineers and Vibe Coders. It integrates various AI models, agents, and applications directly into the operating system, providing users with immediate access to AI assistance through Large Language Models (LLMs).

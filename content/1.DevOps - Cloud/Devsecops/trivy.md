@@ -1,5 +1,6 @@
 ---
 title: Devsecops trivy
+tags: [devops---cloud, devsecops]
 date: 2025-02-04
 ---
 

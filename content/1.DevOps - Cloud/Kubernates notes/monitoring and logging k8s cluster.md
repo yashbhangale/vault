@@ -1,3 +1,7 @@
+---
+title: monitoring and logging k8s cluster
+tags: [devops---cloud, kubernates-notes]
+---
 # **Metrics Server in Kubernetes** 🚀
 
 ![[Pasted image 20250223162845.png]]

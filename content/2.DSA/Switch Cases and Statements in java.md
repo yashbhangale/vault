@@ -1,5 +1,6 @@
 ---
 title: DSA Switch Cases and Statements in java
+tags: [dsa]
 date: 2025-01-10
 ---
 

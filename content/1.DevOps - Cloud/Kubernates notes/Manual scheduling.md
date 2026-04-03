@@ -1,5 +1,6 @@
 ---
 title: Kubernates notes Manual scheduling
+tags: [devops---cloud, kubernates-notes]
 date: 2025-02-21
 ---
 

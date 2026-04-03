@@ -1,3 +1,7 @@
+---
+title: Python Dictionary
+tags: [devops---cloud, python-learning]
+---
 ```python
 thisdict = {  
   "brand": "Ford",  

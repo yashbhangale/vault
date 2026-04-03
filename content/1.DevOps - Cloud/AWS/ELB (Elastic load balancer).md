@@ -1,3 +1,7 @@
+---
+title: ELB (Elastic load balancer)
+tags: [devops---cloud, aws]
+---
 load balance are servers that forward traffic to multiple servers (eg EC2 instances) downstream
 
 ![[Pasted image 20251007180757.png]]

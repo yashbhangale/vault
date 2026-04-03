@@ -1,5 +1,6 @@
 ---
 title: interview Ibm
+tags: [for-job, interview]
 date: 2025-01-10
 ---
 

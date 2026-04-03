@@ -1,3 +1,7 @@
+---
+title: Python List
+tags: [devops---cloud, python-learning]
+---
 
 Lists are used to store multiple items in a single variable
 

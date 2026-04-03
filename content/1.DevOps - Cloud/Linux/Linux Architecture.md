@@ -1,3 +1,7 @@
+---
+title: Linux Architecture
+tags: [devops---cloud, linux]
+---
 Linux is designed in **layers**, where each layer has a specific responsibility.
 # 🧱 1. Hardware Layer (Base)
 

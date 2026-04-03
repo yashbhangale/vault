@@ -1,3 +1,7 @@
+---
+title: nanite where are which
+tags: [projects, fusion]
+---
 
 - [ ] os-release path 
 

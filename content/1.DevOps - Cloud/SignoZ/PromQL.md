@@ -1,5 +1,6 @@
 ---
 title: SignoZ PromQL
+tags: [devops---cloud, signoz]
 date: 2025-01-14
 ---
 

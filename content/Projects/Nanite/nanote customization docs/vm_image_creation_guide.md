@@ -1,3 +1,7 @@
+---
+title: vm_image_creation_guide
+tags: [projects, nanite, nanote-customization-docs]
+---
 # VM Image Creation Guide for Nanite
 
 This document provides a comprehensive guide for creating VMware and VirtualBox virtual machine images for the Nanite Linux distribution. These VM images will allow users to quickly deploy and test Nanite without having to perform a full installation.

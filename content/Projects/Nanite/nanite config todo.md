@@ -1,3 +1,7 @@
+---
+title: nanite config todo
+tags: [projects, nanite]
+---
 
 
 create image: GRUB_BACKGROUND="/usr/share/backgrounds/nanite-grub.png"

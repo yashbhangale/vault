@@ -1,11 +1,7 @@
 ---
 title: operators in java
+tags: [java-learning]
 date: 2024-09-22
-categories:
-  - placement
-  - dsa
-  - java
-draft: false
 ---
 ## Operators in Java
 classified into different types, such as arithmetic, relational, logical, bitwise, assignment, and more.

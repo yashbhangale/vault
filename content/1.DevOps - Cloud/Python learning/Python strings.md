@@ -1,3 +1,7 @@
+---
+title: Python strings
+tags: [devops---cloud, python-learning]
+---
 ```python
 a = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,

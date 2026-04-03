@@ -1,3 +1,7 @@
+---
+title: branding_requirements
+tags: [projects, nanite, nanote-customization-docs]
+---
 # Nanite Branding and Customization Requirements
 
 ## Overview

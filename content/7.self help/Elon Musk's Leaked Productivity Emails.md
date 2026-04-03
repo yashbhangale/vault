@@ -1,3 +1,7 @@
+---
+title: Elon Musk's Leaked Productivity Emails
+tags: [self-help]
+---
 • **Meetings:** Avoid large or frequent meetings. Leave if you aren't adding value. 
 
 • **Signal vs. Noise:** Focus 100% on actions (signal) moving you to your goal. Eliminate distractions (noise). 

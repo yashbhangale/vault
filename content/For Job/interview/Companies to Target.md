@@ -1,5 +1,6 @@
 ---
 title: interview Companies to Target
+tags: [for-job, interview]
 date: 2024-12-23
 ---
 

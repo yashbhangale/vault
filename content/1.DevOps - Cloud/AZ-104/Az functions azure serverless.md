@@ -1,3 +1,7 @@
+---
+title: Az functions azure serverless
+tags: [devops---cloud, az-104]
+---
 ### ⚡ What is Azure Functions?
 
 **Azure Functions** is a **serverless compute service** in Microsoft Azure that lets you run small pieces of code (called _functions_) **without managing servers or infrastructure**.

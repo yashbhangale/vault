@@ -1,5 +1,6 @@
 ---
 title: SignoZ Distributed tracing, metrics, aur logs
+tags: [devops---cloud, signoz]
 date: 2025-01-14
 ---
 

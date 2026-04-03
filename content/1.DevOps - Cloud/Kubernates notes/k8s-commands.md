@@ -1,5 +1,6 @@
 ---
 title: Kubernates notes usefull commands
+tags: [devops---cloud, kubernates-notes]
 date: 2025-01-22
 ---
 

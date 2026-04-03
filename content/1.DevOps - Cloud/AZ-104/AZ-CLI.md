@@ -1,5 +1,6 @@
 ---
 title: AZ-104 AZ-CLI
+tags: [devops---cloud, az-104]
 date: 2024-12-20
 ---
 

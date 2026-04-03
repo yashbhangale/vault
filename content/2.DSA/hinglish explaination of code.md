@@ -1,5 +1,6 @@
 ---
 title: DSA hinglish explaination of code
+tags: [dsa]
 date: 2024-12-20
 ---
 

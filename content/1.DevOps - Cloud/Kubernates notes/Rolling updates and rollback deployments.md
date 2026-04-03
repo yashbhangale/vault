@@ -1,3 +1,7 @@
+---
+title: Rolling updates and rollback deployments
+tags: [devops---cloud, kubernates-notes]
+---
 ![[Pasted image 20250224111229.png]]
 ![[Pasted image 20250224111311.png]]
 

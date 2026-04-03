@@ -1,3 +1,7 @@
+---
+title: Secret
+tags: [for-job, crack-interview]
+---
 ### Master these 12 questions like a pro, and you won’t just impress you’ll dominate.
 
 **“Tell me about yourself.”** → Skip your life story. Instead, craft a 30-second pitch: where you started, key skills, and why this role is your next big move.

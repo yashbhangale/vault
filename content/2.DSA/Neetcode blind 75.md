@@ -1,3 +1,7 @@
+---
+title: Neetcode blind 75
+tags: [dsa]
+---
 
 
 https://neetcode.io/practice?tab=blind75

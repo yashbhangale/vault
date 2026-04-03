@@ -1,3 +1,7 @@
+---
+title: AMI in AWS
+tags: [devops---cloud, aws]
+---
 
 ![[Pasted image 20250918215534.png]]
 

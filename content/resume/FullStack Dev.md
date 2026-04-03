@@ -1,5 +1,6 @@
 ---
 title: resume FullStack Dev
+tags: [resume]
 date: 2024-12-20
 ---
 

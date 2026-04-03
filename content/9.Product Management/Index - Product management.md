@@ -1,3 +1,7 @@
+---
+title: Index - Product management
+tags: [product-management]
+---
 	
 **Product Manager (PM)** = Person responsible for guiding a product from **idea → launch → growth**.
 

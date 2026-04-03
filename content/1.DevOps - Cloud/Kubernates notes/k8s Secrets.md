@@ -1,3 +1,7 @@
+---
+title: k8s Secrets
+tags: [devops---cloud, kubernates-notes]
+---
 secrets are used to store passwords and keys
 
 ![[Pasted image 20250226002043.png]]
