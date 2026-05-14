@@ -1,0 +1,4 @@
+kubectl show nodes --show -labels 
+
+
+taints and toleration --> we 
