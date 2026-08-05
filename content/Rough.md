@@ -1,7 +1,15 @@
 ---
 title: Rough
 ---
+endpoint-creation-notebook-new
+aistylistdocker
+testinstance
+createtar
+secondendpointnotebook
+aistylist
 
+
+![[Pasted image 20260610115900.png]]
 ---
 title: Rough
 ---
