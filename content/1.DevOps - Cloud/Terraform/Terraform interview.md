@@ -358,29 +358,24 @@ resource "null_resource" "example" {
 
 ## 🔥 Quick Terraform Commands Table
 
-|Command|Purpose|
-|---|---|
-|`terraform init`|Initialize directory|
-|`terraform plan`|Preview changes|
-|`terraform apply`|Apply changes|
-|`terraform destroy`|Destroy infra|
-|`terraform fmt`|Format code|
-|`terraform validate`|Validate syntax|
-|`terraform graph`|Dependency graph|
+| Command              | Purpose                       |
+| -------------------- | ----------------------------- |
+| `terraform init`     | Initialize directory          |
+| `terraform plan`     | Preview changes               |
+| `terraform apply`    | Apply changes                 |
+| `terraform destroy`  | Destroy infra                 |
+| `terraform fmt`      | Format code                   |
+| `terraform validate` | Validate syntax               |
+| `terraform graph`    | Dependency graph              |
+| `terraform refresh`  | update Terraform's state file |
 
 ---
 
 ## ✅ **Tips for Interviews**
 
 - Always mention **remote backend with locking** for team use.
-    
 - Emphasize **idempotency** (same code → same infra).
-    
 - Highlight experience with **AWS S3 + DynamoDB** or **Terraform Cloud**.
-    
 - If asked about rollback, explain **version control & previous plan** strategy.
-    
 
 ---
-
-Would you like me to create a **one-page PDF cheat sheet** of these questions for quick revision?
