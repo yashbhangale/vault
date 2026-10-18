@@ -1,0 +1,35 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.path.startsWith("04 Trackers/")
+views:
+  - type: table
+    name: Food
+    filters: file.path.startsWith("04 Trackers/Food/")
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime
+  - type: table
+    name: Workouts
+    filters: file.path.startsWith("04 Trackers/Workouts/")
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime
+  - type: table
+    name: Habits
+    filters: file.path.startsWith("04 Trackers/Habits/")
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime

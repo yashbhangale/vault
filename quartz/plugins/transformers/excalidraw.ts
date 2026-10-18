@@ -87,21 +87,11 @@ export const Excalidraw: QuartzTransformerPlugin<Partial<ExcalidrawOptions> | un
               }
             })
 
-            // Handle wikilinks to Excalidraw files
-            visit(tree, "link", (node: any) => {
-              const url = node.url as string
-
-              // Check if this is a link to an Excalidraw file
-              if (url?.includes(".excalidraw")) {
-                // Try to convert to SVG reference
-                const svgUrl = url.replace(/\.excalidraw(\.md)?$/, ".excalidraw.svg")
-                node.url = svgUrl
-              }
-            })
+            // Ordinary links open the drawing's Markdown page. SVG exports are
+            // optional and should only be used for embedded images above.
           }
         },
       ]
     },
   }
 }
-

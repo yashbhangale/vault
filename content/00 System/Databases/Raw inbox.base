@@ -1,0 +1,34 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.path.startsWith("01 Raw/")
+views:
+  - type: table
+    name: All captures
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime
+  - type: table
+    name: Telegram
+    filters: file.path.startsWith("01 Raw/Telegram/")
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime
+  - type: table
+    name: OneNote
+    filters: file.path.startsWith("01 Raw/OneNote/")
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime

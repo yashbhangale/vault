@@ -1,0 +1,51 @@
+{
+  "hub": "05 Knowledge/Indexes",
+  "privateFolders": [
+    "00 System",
+    "01 Raw",
+    "02 Processed",
+    "03 Journal",
+    "04 Trackers",
+    "07 Areas",
+    "09 Outputs",
+    "10 Archive",
+    "08 Resources/Career"
+  ],
+  "ignorePatterns": [
+    "private/**",
+    "**/private/**",
+    "templates/**",
+    ".obsidian/**",
+    ".smart-env/**",
+    "**/*.base",
+    "**/*.py",
+    "**/*.exe",
+    "**/*.env",
+    "00 System/**"
+  ],
+  "areas": {
+    "05 Knowledge": ["knowledge", "Knowledge", "reference"],
+    "06 Projects": ["projects", "Projects", "project-note"],
+    "07 Areas": ["areas", "Areas", "area-note"],
+    "08 Resources": ["resources", "Resources", "reference"],
+    "01 Raw": ["inbox", "Raw", "capture"],
+    "02 Processed": ["processed", "Processed", "processed-record"],
+    "03 Journal": ["journal", "Journal", "daily-note"],
+    "04 Trackers": ["trackers", "Trackers", "tracker"],
+    "09 Outputs": ["outputs", "Outputs", "report"],
+    "10 Archive": ["archive", "Archive", "archived-note"]
+  },
+  "overrides": {},
+  "areaLabels": {
+    "career": "Career",
+    "cloud-devops": "Cloud and DevOps",
+    "drawings": "Drawings",
+    "personal-learning": "Personal learning",
+    "product-ai": "Product and AI",
+    "programming": "Programming",
+    "projects": "Projects",
+    "knowledge": "Knowledge",
+    "resources": "Resources",
+    "uncategorized": "Unfiled notes"
+  }
+}

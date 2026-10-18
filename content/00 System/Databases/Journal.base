@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.path.startsWith("03 Journal/")
+views:
+  - type: table
+    name: Daily records
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime

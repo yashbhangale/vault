@@ -1,0 +1,23 @@
+---
+title: DSA Single linked list
+tags: [dsa]
+date: 2025-01-10
+type: "reference"
+area: "programming"
+topic: "2.DSA"
+status: "unreviewed"
+source: "obsidian"
+---
+
+single linked list every item knows about other item
+head is reference variable which points to next node , and tail is last one 
+
+last element is connected to ***null***
+
+
+![alt text](Pastedimage20241115202536.png)
+
+
+#### Code
+
+

@@ -1,5 +1,7 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import knowledgebase from "./scripts/knowledgebase/config.json"
+import privateAssets from "./scripts/knowledgebase/private-assets.json"
 
 /**
  * Quartz 4 Configuration
@@ -8,7 +10,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Notes",
+    pageTitle: "Yash’s Knowledge Base",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -17,7 +19,12 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "yashbhangale.github.io/vault/",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    // Folder exclusions protect notes AND attachments. Note flags protect Markdown only.
+    ignorePatterns: [
+      ...knowledgebase.ignorePatterns,
+      ...privateAssets,
+      ...knowledgebase.privateFolders.map((folder) => `${folder}/**`),
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -77,7 +84,7 @@ const config: QuartzConfig = {
         center: true,
       }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [Plugin.RemoveDrafts(), Plugin.RemovePrivate()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),

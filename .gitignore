@@ -9,3 +9,18 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+.recovery/
+# Private second-brain material and local state
+content/01 Raw/
+content/02 Processed/
+content/03 Journal/
+content/04 Trackers/
+content/07 Areas/
+content/09 Outputs/
+content/10 Archive/
+content/00 System/Manifests/
+content/00 System/Legacy Indexes/
+reports/*.json
+__pycache__/
+*.pyc

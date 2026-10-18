@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.path.startsWith("09 Outputs/")
+views:
+  - type: table
+    name: Reviews and reports
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime

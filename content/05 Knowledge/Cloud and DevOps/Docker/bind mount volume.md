@@ -1,0 +1,12 @@
+---
+title: Docker bind mount volume
+tags: [devops---cloud, docker]
+date: 2024-12-20
+type: "reference"
+area: "cloud-devops"
+topic: "Docker"
+status: "unreviewed"
+source: "obsidian"
+---
+
+A bind mount will allow you to map a directory from your local filesystem to the container. This way, when you make changes to the code locally, they will immediately reflect in the container.

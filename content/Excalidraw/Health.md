@@ -1,4 +1,0 @@
----
-title: Health
-tags: [excalidraw]
----

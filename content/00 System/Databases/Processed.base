@@ -1,0 +1,35 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.path.startsWith("02 Processed/")
+views:
+  - type: table
+    name: Structured records
+    filters: note.type != "index"
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime
+  - type: table
+    name: Needs synthesis
+    filters: note.enrichment_status == "pending"
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime
+  - type: table
+    name: Hinglish
+    filters: note.type == "hinglish-transcription"
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - source
+      - file.mtime

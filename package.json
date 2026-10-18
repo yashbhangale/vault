@@ -1,6 +1,6 @@
 {
   "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "description": "\ud83c\udf31 publish your digital garden and notes as a website",
   "private": true,
   "version": "4.5.1",
   "type": "module",
@@ -17,7 +17,11 @@
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
-    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1"
+    "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
+    "kb:audit": "node scripts/knowledgebase/index.mjs audit",
+    "kb:refresh": "node scripts/knowledgebase/index.mjs refresh",
+    "kb:check": "node scripts/knowledgebase/index.mjs check",
+    "build": "npm run kb:refresh && node quartz/bootstrap-cli.mjs build"
   },
   "engines": {
     "npm": ">=10.9.2",
