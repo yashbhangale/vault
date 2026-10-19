@@ -449,6 +449,15 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     await displayResults(finalResults)
   }
 
+  const dashboardSearch = (event: Event) => {
+    const term = (event as CustomEvent<{ term: string }>).detail?.term ?? ""
+    showSearch("basic")
+    searchBar.value = term
+    searchBar.dispatchEvent(new Event("input"))
+  }
+  document.addEventListener("quartz:search", dashboardSearch)
+  window.addCleanup(() => document.removeEventListener("quartz:search", dashboardSearch))
+
   document.addEventListener("keydown", shortcutHandler)
   window.addCleanup(() => document.removeEventListener("keydown", shortcutHandler))
   searchButton.addEventListener("click", () => showSearch("basic"))

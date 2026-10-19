@@ -21,9 +21,13 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
-    Component.TagList(),
+    Component.KnowledgeDashboard(),
+    ...[Component.ArticleTitle(), Component.ContentMeta(), Component.TagList()].map((component) =>
+      Component.ConditionalRender({
+        component,
+        condition: (page) => page.fileData.slug !== "index",
+      }),
+    ),
   ],
   left: [
     Component.PageTitle(),

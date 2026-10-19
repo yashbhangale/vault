@@ -242,9 +242,9 @@ if (errors.length) {
   await output(
     "index.md",
     page(
-      "Yash Bhangale's Knowledge Base",
-      "Notes on cloud engineering, programming, projects, and lifelong learning.",
-      `A working library of things I learn, build, and return to.\n\n## Explore\n\n${mapLinks.join("\n")}\n\n[Full knowledge map](/${config.hub}/Sitemap.md)\n\n## Find a note\n\nUse search for a specific question, a subject index to browse, and backlinks to follow related ideas.\n\n## Around the web\n\n- [GitHub](https://github.com/yashbhangale)\n- [Portfolio](https://hiremefor.cloud)\n- [LinkedIn](https://linkedin.com/in/yashbhangale)`,
+      "Home",
+      "Find a note, browse a subject, or return to recent learning.",
+      `Find a note with search, or choose a subject below. On the website, press Ctrl/Cmd + K to search.\n\n## Browse by subject\n\n${mapLinks.join("\n")}\n\n[Full knowledge map](</${config.hub}/Sitemap.md>)`,
     ),
   )
   const summary = {
