@@ -261,11 +261,13 @@ if (errors.length) {
       .filter(([, entries]) => entries.length > 1)
       .map(([title, entries]) => ({ title, paths: entries.map((note) => note.path) })),
   }
-  if (write)
+  if (write) {
+    await fs.mkdir(path.join(repo, "reports"), { recursive: true })
     await fs.writeFile(
       path.join(repo, "reports/knowledgebase-audit.json"),
       JSON.stringify(summary, null, 2) + "\n",
     )
+  }
   console.log(
     JSON.stringify({ mode, ...summary, duplicateTitles: summary.duplicateTitles.length }, null, 2),
   )

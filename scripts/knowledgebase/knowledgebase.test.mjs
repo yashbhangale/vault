@@ -70,7 +70,6 @@ test("refresh preserves existing properties and bodies, supports dry run, and is
     await fs.symlink(path.join(repo, "node_modules"), path.join(temp, "node_modules"))
     await fs.mkdir(path.join(temp, "content/01 Raw/OneNote"), { recursive: true })
     await fs.mkdir(path.join(temp, "content/05 Knowledge/Programming/SQL"), { recursive: true })
-    await fs.mkdir(path.join(temp, "reports"))
     const body = "\n# SQL\n\nKeep these bytes.\n"
     const original =
       "---\n# Keep my comment\ntitle: Custom title\ntags: [existing]\naliases: [SQL alias]\ncustom:\n  nested: value\n---\n" +
@@ -88,10 +87,15 @@ test("refresh preserves existing properties and bodies, supports dry run, and is
         encoding: "utf8",
       })
     assert.equal(run("audit").status, 0)
+    await assert.rejects(fs.stat(path.join(temp, "reports")), { code: "ENOENT" })
     assert.equal(await fs.readFile(note, "utf8"), original)
     assert.equal(run("check").status, 1)
     const refresh = run("refresh")
     assert.equal(refresh.status, 0, refresh.stderr)
+    const report = JSON.parse(
+      await fs.readFile(path.join(temp, "reports/knowledgebase-audit.json"), "utf8"),
+    )
+    assert.equal(report.publicNotes, 1)
     const updated = await fs.readFile(note, "utf8")
     assert.ok(updated.startsWith(original.slice(0, original.indexOf("\n---", 4) + 1)))
     assert.ok(updated.endsWith(`---\n${body}`))
