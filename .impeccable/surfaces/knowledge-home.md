@@ -35,3 +35,9 @@ Reported by the completing agent:
 - The independent review returned Ship with no material findings.
 
 Limitations: screenshots cover dark mode only; actual Obsidian rendering was not inspected. No deployment was performed.
+
+## Portfolio palette update
+
+The user supplied a portfolio screenshot and requested its color scheme across the knowledge base. Sampled dark canvas `#111315`, warm ivory `#e8e3d5`, yellow action/link accent `#ffbc00`; supporting teal `#56cece`. Dark raised surface is `#15191c`. Light mode uses cream `#f5f2e9`, charcoal text, accessible amber `#805900`, and dark teal `#176b6b`. Quartz configuration remains the central palette authority. Custom selection, focus, search, tags, and formerly blue shadows follow the palette. Layout and typography remain unchanged.
+
+Validation: build and TypeScript passed; primary text/link pairs exceed 4.5:1 in both themes. Browser inspected dark/light desktop and dark mobile. Final desktop computed canvas, heading and accent match the sampled reference and show no horizontal overflow. Screenshots: `.impeccable/review/portfolio-dark.png`, `portfolio-light.png`, `portfolio-mobile.png`. No deployment performed.

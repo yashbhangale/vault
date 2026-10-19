@@ -28,3 +28,7 @@ Preserve local source captures and their provenance. Private inboxes, journals, 
 - Show real notes and counts, not invented progress.
 - Generate navigation from existing metadata rather than repeated AI synthesis.
 - Keep personal operations private.
+
+## Brand Commitments
+
+The user requested the portfolio screenshot’s charcoal, warm ivory, yellow, and teal color scheme for the website. Preserve legible reading contrast in both themes.

@@ -649,7 +649,7 @@ iframe.pdf {
   background: linear-gradient(90deg, var(--secondary), var(--tertiary));
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 9999;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 2px 8px rgba(255, 188, 0, 0.4);
   
   &::after {
     content: '';

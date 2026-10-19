@@ -239,7 +239,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 .folder-icon:hover {
   color: var(--tertiary);
   transform: scale(1.2);
-  filter: drop-shadow(0 2px 4px rgba(59, 130, 246, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(255, 188, 0, 0.3));
 }
 
 .explorer {

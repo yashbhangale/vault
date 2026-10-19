@@ -51,10 +51,10 @@
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 5px rgba(255, 188, 0, 0.3);
   }
   50% {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+    box-shadow: 0 0 20px rgba(255, 188, 0, 0.6);
   }
 }
 
@@ -139,11 +139,11 @@ a {
 
   &.internal {
     transition: all 0.3s ease;
-    box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+    box-shadow: 0 0 0 rgba(255, 188, 0, 0);
     
     &:hover {
       background: linear-gradient(120deg, var(--highlight), transparent);
-      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+      box-shadow: 0 2px 8px rgba(255, 188, 0, 0.15);
       transform: translateY(-1px);
     }
   }
@@ -207,7 +207,7 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
     
     &:focus {
       border-color: var(--secondary);
-      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      box-shadow: 0 0 0 3px rgba(255, 188, 0, 0.1);
       transform: scale(1.02);
     }
   }
@@ -283,7 +283,7 @@ blockquote {
   &:hover {
     border-left-width: 6px;
     transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 188, 0, 0.1);
   }
   
   &::before {
@@ -330,7 +330,7 @@ blockquote {
   background: linear-gradient(90deg, var(--secondary), var(--tertiary));
   height: 4px;
   transition: width 0.1s ease;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 2px 8px rgba(255, 188, 0, 0.4);
 }
 
 // ===================================
@@ -351,7 +351,7 @@ blockquote {
     background: linear-gradient(135deg, var(--secondary), var(--tertiary));
     color: var(--light);
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 188, 0, 0.3);
     border-color: transparent;
   }
 }
@@ -599,5 +599,74 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+}
+
+// Portfolio palette: charcoal, warm ivory, yellow actions, and teal details.
+// Theme values live in quartz.config.ts; these roles cover custom decoration.
+:root {
+  --portfolio-surface: #eeebe2;
+  --portfolio-accent-fill: #ffbc00;
+  --portfolio-accent-ink: #111315;
+}
+:root[saved-theme="dark"] {
+  --portfolio-surface: #15191c;
+}
+::selection {
+  background: var(--textHighlight);
+  color: var(--dark);
+  text-shadow: none;
+}
+a::before,
+pre::before,
+.navigation-progress,
+.gradient-accent {
+  background: var(--secondary);
+}
+.page-header h1 {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--dark);
+}
+blockquote,
+.tags a,
+.tag-link,
+.toc ul li.active {
+  background: var(--highlight);
+}
+.tags a:hover,
+.tag-link:hover {
+  background: var(--portfolio-accent-fill);
+  color: var(--portfolio-accent-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+:is(a, button, input, summary):focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+.knowledge-dashboard {
+  .dashboard-search {
+    background: var(--portfolio-surface);
+    border-color: var(--secondary);
+  }
+  .dashboard-search svg {
+    color: var(--secondary);
+  }
+  .dashboard-suggestions button {
+    background: var(--portfolio-surface);
+    border: 1px solid var(--lightgray);
+  }
+  .dashboard-suggestions button:hover {
+    background: var(--portfolio-accent-fill);
+    border-color: var(--portfolio-accent-fill);
+    color: var(--portfolio-accent-ink);
+  }
+  .dashboard-count svg {
+    color: var(--secondary);
   }
 }
