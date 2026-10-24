@@ -24,6 +24,7 @@ Raw, Processed, Journal, Trackers, Areas, Outputs, Archive, and System are priva
 
 ## Capture and processing
 
+- Direct Google API collectors preserve private snapshots under `01 Raw/Google/`, process selected snapshots through the same source ledger, and generate a private daily brief embedded in [[00 System/Today|Today]]. Calendar, Gmail, Tasks, and the nine configured ordinary YouTube playlists have completed first captures; an hourly local timer is enabled on this machine. See [[00 System/Instructions/Google capture|Google capture]] for scope, sign-in, scheduling, and Takeout watch-history imports.
 - Telegram Sync writes Markdown and media into `01 Raw/Telegram/`; inspect plugin state after an Obsidian restart before treating live delivery as verified.
 - Obsidian Importer writes OneNote pages into `01 Raw/OneNote/`, saves `onenote-id`, places attachments under `01 Raw/OneNote/Attachments`, and skips already imported pages to protect originals. Reimport an updated page as a separate copy when needed.
 - The OneNote Integration plugin is a local COM embed/browser, not an independent exporter. Its live OneNote access requires a supported desktop environment.

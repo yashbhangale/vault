@@ -22,6 +22,8 @@ An existing Quartz website publishes selected knowledge, projects, and resources
 
 Preserve local source captures and their provenance. Private inboxes, journals, trackers, areas, and exports remain excluded from the website. Work locally; deployment is outside this change. Use existing Quartz search and generated topic indexes. The private Home must work without installing a plugin.
 
+The local web workspace may read the complete allowed vault areas on this computer, while credential folders and internal manifests remain inaccessible. Authentication was explicitly deferred by the user. Keep the full-vault web service on loopback; it must not make private captures part of the public Quartz build. The workspace supports source refresh, timer controls and provenance-aware manual capture.
+
 ## Product Principles
 
 - Put search and common destinations first.

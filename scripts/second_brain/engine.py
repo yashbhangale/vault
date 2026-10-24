@@ -86,6 +86,7 @@ def frontmatter(text):
 def source_type(rel):
  parts=rel.parts
  if len(parts)>1 and parts[0]=='01 Raw':
+  if parts[1]=='Google' and len(parts)>2:return 'google-'+parts[2].lower().replace(' ','-')
   return {'Telegram':'telegram','OneNote':'onenote','YouTube Transcripts':'youtube','Web Clippings':'web','Manual Captures':'manual'}.get(parts[1],'manual')
  return 'manual'
 
@@ -106,6 +107,7 @@ def video_id(link):
 
 
 def classify(text,meta,source):
+ if source.startswith('google-'):return 'google-snapshot'
  if source=='youtube':return 'youtube-transcript'
  if source=='web':return 'web-clipping'
  if source=='onenote':return 'onenote-page'
@@ -158,6 +160,10 @@ def render(rel,p,sha,source_id,captured,source_meta=None):
  if link:output+=['**Source URL:** '+link,'']
  if stamps:output+=['## Transcript markers','',', '.join(stamps),'']
  if excerpt:output+=['## Source excerpt','',excerpt,'']
+ if kind=='google-snapshot':
+  # Index deterministic readable records; preserve the API payload only in Raw.
+  readable=body.split('\n<!-- payload -->',1)[0].strip()
+  if readable:output+=['## Captured records','',readable,'']
  if suffix in IMAGE:
   output+=['## Media','',f'!{ref(rel)}','','No image description has been inferred.','']
  elif suffix in AUDIO|VIDEO:

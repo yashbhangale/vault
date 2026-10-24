@@ -1,0 +1,9 @@
+{
+  "timezone": "Asia/Kolkata",
+  "calendar_ids": ["primary"],
+  "calendar_days_ahead": 7,
+  "gmail_query": "newer_than:7d -in:spam -in:trash",
+  "gmail_include_body": false,
+  "youtube_playlist_ids": [],
+  "max_items_per_collection": 1000
+}

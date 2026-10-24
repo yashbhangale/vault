@@ -72,6 +72,15 @@ export default (() => {
             <button data-dashboard-search={term}>{term}</button>
           ))}
         </div>
+        <section class="dashboard-workspace" aria-label="Daily workspace">
+          <div>
+            <h2>Your daily workspace</h2>
+            <p>Calendar, tasks, captures and your full vault. Available on your computer.</p>
+          </div>
+          <a href="http://127.0.0.1:4173/" rel="noreferrer">
+            Open local workspace
+          </a>
+        </section>
         <div class="dashboard-columns">
           <section aria-labelledby="dashboard-topics">
             <div class="dashboard-section-heading">

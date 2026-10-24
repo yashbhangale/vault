@@ -4,6 +4,10 @@ publish: false
 type: guide
 ---
 
+# Daily connected workflow
+
+Use [[00 System/Today|Today]] to read source-backed agenda, tasks, captured email, learning links, and collection health. See [[00 System/Instructions/Google capture|Google API setup]] for direct local read-only collection and the optional hourly timer. Choose actions in your journal; generated briefs are machine-owned. Review useful captures into maintained concepts weekly. Source presence does not establish completed activity or learning.
+
 # Triage
 
 Run `python3 scripts/second_brain/engine.py discover`. Inspect only the selected new/changed paths and errors from the compact manifest. Keep Raw untouched. A duplicate hash is a candidate, not permission to delete a source.

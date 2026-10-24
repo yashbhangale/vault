@@ -15,6 +15,8 @@ Find what you need. Capture what matters. Keep moving.
 
 | I want to… | Open |
 | --- | --- |
+| Use my full vault in a browser | [Local web workspace](http://127.0.0.1:4173/) · [[00 System/Instructions/Web workspace|Workspace guide]] |
+| See my day across apps | [[00 System/Today|Today]] · [[00 System/Instructions/Google capture|Google API setup and daily loop]] |
 | Find knowledge | [Knowledge map](../05%20Knowledge/Indexes/Sitemap.md) · [Knowledge browser](../00%20System/Databases/Knowledge.base) |
 | See my projects | [Project index](../06%20Projects/index.md) · [Project browser](../00%20System/Databases/Projects.base) |
 | Review new captures | [Inbox](../00%20System/Databases/Raw%20inbox.base) · [Needs synthesis view](../00%20System/Databases/Processed.base) |

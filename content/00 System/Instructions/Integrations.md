@@ -4,6 +4,10 @@ publish: false
 type: guide
 ---
 
+# Google APIs and daily brief
+
+Direct local collectors for Calendar, Gmail, Tasks, and ordinary YouTube playlists are authorized and have completed their first captures on this machine. The hourly systemd user timer is enabled. Gmail's API was enabled in the selected Google Cloud project during setup. The nine existing ordinary YouTube playlists are configured; add the IDs of any new playlists to the private config. No Codex plugins are needed. Watch history uses a separate local Google Takeout JSON import. See [[00 System/Instructions/Google capture|Google capture setup and daily loop]] and [[00 System/Today|Today]]. A new machine still requires its own credentials and timer setup.
+
 # Telegram
 
 The installed `telegram-sync` plugin is version 4.0.0. Its existing distribution rule originally wrote Markdown to `Telegram/{{content:30}} - {{messageTime:YYYYMMDDHHmmssSSS}}.md` and files to `Telegram/{{file:type}}s/{{file:name}} - {{messageTime:YYYYMMDDHHmmssSSS}}.{{file:extension}}`. Those two destinations now point under `01 Raw/Telegram/`. Bot credentials, allowed chats, message deletion policy, and other rule fields were preserved. Obsidian should be restarted so the running plugin loads the changed settings. A live post-restart delivery has not yet been observed.

@@ -14,7 +14,7 @@ class SecondBrainTests(unittest.TestCase):
  def setUp(self):
   self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
   self.repo=Path(self.temp.name);self.scripts=self.repo/'scripts/second_brain';self.scripts.mkdir(parents=True)
-  for name in ('engine.py','ingest.py','hinglish.py','journal.py','enrich.py'):shutil.copyfile(SOURCE/name,self.scripts/name)
+  for name in ('engine.py','ingest.py','hinglish.py','journal.py','enrich.py','capture_local.py','google_capture.py'):shutil.copyfile(SOURCE/name,self.scripts/name)
   (self.repo/'content/01 Raw/Telegram/photos').mkdir(parents=True)
   (self.repo/'content/01 Raw/OneNote').mkdir(parents=True)
   (self.repo/'content/01 Raw/Manual Captures').mkdir(parents=True)
@@ -26,6 +26,14 @@ class SecondBrainTests(unittest.TestCase):
  def put(self,rel,body):
   p=self.repo/'content'/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(body);return p
  def state(self):return json.loads((self.repo/'content/00 System/Manifests/processing-state.json').read_text())['items']
+
+ def test_dashboard_capture_preserves_original_and_registers_provenance(self):
+  external=self.repo/'capture.md';body='A thought captured through the local workspace.\n';external.write_text(body)
+  result=self.cli('capture_local.py','--file',external)
+  raw=self.repo/'content'/result['raw_path'];self.assertEqual(raw.read_text(),body)
+  self.assertEqual(external.read_text(),body)
+  row=self.state()[result['raw_path']];self.assertEqual(row['status'],'processed')
+  self.assertEqual(row['sha256'],hashlib.sha256(body.encode()).hexdigest())
 
  def test_incremental_sources_duplicates_retry_and_history(self):
   food=self.put('01 Raw/Telegram/Lunch - 20261018120000000.md','Lunch: rice and dal.')

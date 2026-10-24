@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Yash’s workspace</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to workspace</a>
+    <aside class="sidebar">
+      <a class="brand" href="#today"
+        ><span class="brand-mark">yb.</span><span>Yash’s<br />workspace</span></a
+      >
+      <nav aria-label="Workspace">
+        <a href="#today" data-view="today">Today</a>
+        <a href="#library" data-view="library">All notes <span id="nav-count"></span></a>
+        <a href="#calendar" data-view="calendar">Calendar</a>
+        <a href="#tasks" data-view="tasks">Tasks</a>
+        <a href="#gmail" data-view="gmail">Mail</a>
+        <a href="#youtube" data-view="youtube">Saved videos</a>
+        <a href="#journal" data-view="journal">Journal</a>
+        <a href="#capture" data-view="capture">Quick capture</a>
+        <a href="#sync" data-view="sync">Sync & sources</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a href="/vault/" class="quartz-link">Open Quartz knowledge site</a>
+        <p>
+          <span class="status-dot"></span> Local workspace<br /><span class="muted"
+            >Your full vault stays on this computer.</span
+          >
+        </p>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <form id="global-search" role="search">
+          <label class="sr-only" for="search">Search your whole vault</label
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m16 16 5 5"></path></svg
+          ><input
+            id="search"
+            type="search"
+            placeholder="Search your whole vault"
+            autocomplete="off"
+          /><kbd>Ctrl / ⌘ K</kbd>
+        </form>
+        <button id="theme-toggle" class="quiet" aria-label="Switch to light theme">
+          Light theme
+        </button>
+        <button id="sync-now" class="primary">Sync now</button>
+      </header>
+      <div id="notice" role="status" aria-live="polite" hidden></div>
+      <main id="main" tabindex="-1"><div class="loading">Opening your workspace…</div></main>
+      <footer class="workspace-footer">
+        <span>One vault. A clearer view.</span
+        ><span id="footer-status">Reading local source records…</span>
+      </footer>
+    </div>
+  </body>
+</html>

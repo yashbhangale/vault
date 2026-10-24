@@ -1,6 +1,6 @@
 {
   "name": "@jackyzha0/quartz",
-  "description": "\ud83c\udf31 publish your digital garden and notes as a website",
+  "description": "🌱 publish your digital garden and notes as a website",
   "private": true,
   "version": "4.5.1",
   "type": "module",
@@ -12,6 +12,8 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
+    "dashboard": "node scripts/dashboard/server.mjs",
+    "dashboard:test": "node --test scripts/dashboard/*.test.mjs",
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
