@@ -121,6 +121,32 @@ test("cross-origin writes, missing tokens and rebinding hosts are blocked", asyn
   assert.equal(await rawRequest({ "Sec-Fetch-Site": "cross-site" }), 403)
 })
 
+test("a public-site link may open the shell but cannot read private API data", async (t) => {
+  const { base } = await fixture(t)
+  const headers = {
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Dest": "document",
+  }
+  const request = (route) =>
+    new Promise((resolve, reject) => {
+      const call = http.get(base + route, { headers }, (response) => {
+        let body = ""
+        response.on("data", (chunk) => {
+          body += chunk
+        })
+        response.on("end", () => resolve({ status: response.statusCode, body }))
+      })
+      call.on("error", reject)
+    })
+  const shell = await request("/")
+  assert.equal(shell.status, 200)
+  assert.ok(shell.body.includes("Opening your workspace"))
+  assert.ok(!shell.body.includes("uncommonneedle"))
+  assert.equal((await request("/api/context")).status, 403)
+  assert.equal((await request("/api/overview")).status, 403)
+})
+
 test("sync only runs fixed commands with explicitly allowed sources", async (t) => {
   const { post, get, calls } = await fixture(t)
   assert.equal((await post("/api/sync", { sources: ["gmail;rm"] })).status, 400)

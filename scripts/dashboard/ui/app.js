@@ -55,6 +55,10 @@ async function api(url, body) {
           body: JSON.stringify(body),
         },
   )
+  if (response.status === 401) {
+    location.assign("/auth/login")
+    throw new Error("Sign in to continue.")
+  }
   const value = await response.json()
   if (!response.ok)
     throw new Error(value.error || "Could not load this view. Refresh and try again.")
@@ -429,7 +433,7 @@ function updateStatus() {
     (source) => source.status === "ok" && !source.stale,
   ).length
   document.querySelector("#footer-status").textContent =
-    `${connected} sources current · ${overview.files.toLocaleString("en-IN")} vault files · Local only`
+    `${connected} sources current · ${overview.files.toLocaleString("en-IN")} vault files · ${context?.localOnly ? "Local only" : "Owner-only Google access"}`
 }
 async function route() {
   const view = viewName(),
@@ -497,6 +501,27 @@ themeToggle.addEventListener("click", () => {
 applyTheme()
 try {
   context = await api("/api/context")
+  if (!context.localOnly) {
+    const signOut = document.querySelector("#sign-out")
+    signOut.hidden = false
+    signOut.addEventListener("click", async () => {
+      await api("/api/logout", {})
+      location.assign("/auth/login")
+    })
+    const label = document.querySelector(".sidebar-bottom p")
+    label.replaceChildren()
+    const dot = document.createElement("span")
+    dot.className = "status-dot"
+    label.append(
+      dot,
+      document.createTextNode(" Private online workspace"),
+      document.createElement("br"),
+    )
+    const detail = document.createElement("span")
+    detail.className = "muted"
+    detail.textContent = "Only your Google account can open your vault."
+    label.append(detail)
+  }
   overview = await api("/api/overview")
   updateStatus()
   await route()

@@ -12,7 +12,9 @@ const command = process.argv[2] || "status"
 if (command === "install") {
   await fs.mkdir(folder, { recursive: true })
   const unit =
-    "[Unit]\nDescription=Local vault and Quartz workspace\n\n[Service]\nType=simple\nExecStart=" +
+    "[Unit]\nDescription=Vault and Quartz workspace\n\n[Service]\nType=simple\nEnvironmentFile=-" +
+    quote(path.join(root, "private/dashboard/online.env")) +
+    "\nExecStart=" +
     quote(process.execPath) +
     " " +
     quote(path.join(root, "scripts/dashboard/server.mjs")) +
@@ -22,7 +24,10 @@ if (command === "install") {
   execFileSync("systemctl", ["--user", "enable", "--now", "vault-dashboard.service"], {
     stdio: "inherit",
   })
-  console.log("Local workspace starts with your user services: http://127.0.0.1:4173/")
+  execFileSync("systemctl", ["--user", "restart", "vault-dashboard.service"], { stdio: "inherit" })
+  console.log(
+    "Workspace service installed. Online settings are read from private/dashboard/online.env when present.",
+  )
 } else if (command === "disable")
   execFileSync("systemctl", ["--user", "disable", "--now", "vault-dashboard.service"], {
     stdio: "inherit",

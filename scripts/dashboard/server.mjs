@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url"
 import { execFile } from "node:child_process"
 import { promisify } from "node:util"
 import { Vault } from "./vault.mjs"
+import { googleLoginConfiguration, createGoogleLogin } from "./google-login.mjs"
 
 const exec = promisify(execFile)
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
@@ -31,8 +32,14 @@ const mime = {
 }
 const allowedSources = ["calendar", "tasks", "gmail", "youtube"]
 
-export function createDashboard({ root = ROOT, run = exec } = {}) {
+export function createDashboard({
+  root = ROOT,
+  run = exec,
+  login = googleLoginConfiguration(),
+  loginOptions,
+} = {}) {
   const vault = new Vault(root)
+  const google = login ? createGoogleLogin(login, loginOptions) : null
   const token = crypto.randomBytes(32).toString("hex")
   const jobs = new Map()
   let busy = false
@@ -92,17 +99,43 @@ export function createDashboard({ root = ROOT, run = exec } = {}) {
     )
     try {
       const localPort = server.address()?.port
-      const hosts = new Set([`127.0.0.1:${localPort}`, `localhost:${localPort}`])
-      if (!hosts.has(req.headers.host) || req.headers["sec-fetch-site"] === "cross-site")
-        return send(403, { error: "This workspace is available only on this computer." })
-      const url = new URL(req.url, "http://" + req.headers.host)
+      const hosts = new Set(
+        login ? [login.host] : [`127.0.0.1:${localPort}`, `localhost:${localPort}`],
+      )
+      if (!hosts.has(req.headers.host))
+        return send(403, { error: "This hostname is not configured for the workspace." })
+      const origin = login ? login.origin : "http://" + req.headers.host
+      const url = new URL(req.url, origin)
+      if (google) {
+        const auth = await google.handle(req, url)
+        if (auth) {
+          if (auth.cookies) res.setHeader("Set-Cookie", auth.cookies)
+          if (auth.location) res.setHeader("Location", auth.location)
+          return send(auth.status, auth.body || "", "text/html")
+        }
+        if (!google.authenticated(req)) {
+          if (["/", "/index.html"].includes(url.pathname)) {
+            res.writeHead(302, { Location: "/auth/login" })
+            return res.end()
+          }
+          return send(401, {
+            error: "Sign in with the workspace owner's Google account to continue.",
+          })
+        }
+      }
+      // A link from the published site is a cross-site top-level navigation.
+      // It may load the empty app shell, but never source data or action tokens.
+      const shellNavigation =
+        ["GET", "HEAD"].includes(req.method) &&
+        ["/", "/index.html"].includes(url.pathname) &&
+        req.headers["sec-fetch-mode"] === "navigate" &&
+        req.headers["sec-fetch-dest"] === "document"
+      if (req.headers["sec-fetch-site"] === "cross-site" && !shellNavigation)
+        return send(403, { error: "Open the workspace directly before accessing its data." })
       if (!["GET", "HEAD", "POST"].includes(req.method))
         return send(405, { error: "Method not supported" })
       if (req.method === "POST") {
-        if (
-          req.headers.origin !== "http://" + req.headers.host ||
-          req.headers["x-vault-token"] !== token
-        )
+        if (req.headers.origin !== origin || req.headers["x-vault-token"] !== token)
           return send(403, { error: "Refresh the workspace before trying this action." })
         let raw = ""
         for await (const chunk of req) {
@@ -111,6 +144,10 @@ export function createDashboard({ root = ROOT, run = exec } = {}) {
             return send(413, { error: "Capture must be smaller than 128 KB." })
         }
         const body = raw ? JSON.parse(raw) : {}
+        if (url.pathname === "/api/logout" && google) {
+          res.setHeader("Set-Cookie", google.logout(req))
+          return send(200, { redirect: "/auth/login" })
+        }
         if (url.pathname === "/api/sync") {
           const sources = body.sources || allowedSources
           if (
@@ -175,7 +212,8 @@ export function createDashboard({ root = ROOT, run = exec } = {}) {
         }
         return send(404, { error: "Action not found" })
       }
-      if (url.pathname === "/api/context") return send(200, { token, localOnly: true })
+      if (url.pathname === "/api/context")
+        return send(200, { token, localOnly: !login, access: login ? "owner-google" : "local" })
       if (url.pathname === "/api/overview") return send(200, await vault.overview())
       if (url.pathname === "/api/notes")
         return send(
@@ -218,6 +256,10 @@ export function createDashboard({ root = ROOT, run = exec } = {}) {
         )
       // Serve the existing published Quartz build under its configured /vault base.
       if (url.pathname === "/vault" || url.pathname.startsWith("/vault/")) {
+        if (login) {
+          res.writeHead(302, { Location: "https://notes.yashbhangale.site/" })
+          return res.end()
+        }
         // Keep Quartz's scripts on a different origin from private vault APIs.
         res.writeHead(302, {
           Location:
@@ -292,7 +334,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const quartz = createQuartzPreview()
   quartz.listen(Number(process.env.VAULT_QUARTZ_PORT || 4174), "127.0.0.1")
   server.listen(port, "127.0.0.1", () =>
-    console.log(`Vault workspace: http://127.0.0.1:${server.address().port} (local only)`),
+    console.log(`Vault workspace listening on loopback port ${server.address().port}`),
   )
   const failed = (error) => {
     console.error(
