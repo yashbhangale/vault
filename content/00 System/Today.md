@@ -10,4 +10,4 @@ publish: false
 
 Use **Open today's daily note** in Obsidian to write your plan and reflections.
 
-![[09 Outputs/Daily Briefs/2026-10-25]]
+![[09 Outputs/Daily Briefs/2026-10-26]]
